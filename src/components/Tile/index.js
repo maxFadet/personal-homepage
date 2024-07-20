@@ -1,16 +1,25 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Tile = styled.article`
-
   padding: 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 72px;
   align-items: center;
 
+  ${({ variant }) =>
+    variant &&
+    css`
+     grid-template-columns: auto;
+      background-color: ${({ theme }) => theme.color.white};
+      margin: 72px auto;
+      box-shadow: rgba(9, 10, 51, 0.02) 0px -2px 50px 0px;
+      padding: 32px;
+    `}
+
   @media (max-width: 1120px) {
     grid-template-columns: 1fr;
-    }
+  }
 `;
 
 export const Image = styled.img`
@@ -40,7 +49,13 @@ export const Title = styled.header`
   font-weight: 900;
   line-height: 45.99px;
   letter-spacing: 0.05em;
-  text-align: left;
+
+  ${({ h2 }) =>
+    h2 &&
+    css`
+      font-size: 30px;
+      line-height: 36.31px;
+    `}
   `;
 
 export const Text = styled.p`
@@ -68,4 +83,26 @@ export const Button = styled.button`
   &:active {
     box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
     }  
+`;
+
+export const Table = styled.div`
+border-top: 1px solid rgba(209, 213, 218, 0.3);
+padding: 32px;
+`;
+
+export const List = styled.ul`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px 115px;
+  line-height: 25px;
+  padding: 0px;
+`;
+
+export const Item = styled.li`
+  color: ${({ theme }) => theme.color.slateGray};
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+letter-spacing: 0.05em;
+text-align: left;
 `;

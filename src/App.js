@@ -1,6 +1,6 @@
 import './App.css';
 import { Container } from './components/Container';
-import { Caption, Content, Image, Tile, Title, Text, Button } from './components/Tile';
+import { Caption, Content, Image, Tile, Title, Text, Button, Table, List, Item } from './components/Tile';
 import personalPhoto from './images/personal-photo.jpg'
 
 function App() {
@@ -21,6 +21,42 @@ function App() {
           <Button>
             Hire me
           </Button>
+        </Content>
+      </Tile>
+      <Tile variant>
+        <Content>
+          <Title h2>My skillset includes 🛠️</Title>
+          <Table>
+            <List>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+              <Item>
+              Semantic & accessible HTML
+              </Item>
+            </List>
+          </Table>
         </Content>
       </Tile>
     </Container >
