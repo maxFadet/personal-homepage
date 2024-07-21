@@ -1,4 +1,4 @@
-import { Button, Caption, Content, Article, Image, Title, Text, ButtonIcon, ButtonText } from "./styled";
+import { Button, Caption, Content, Article, Image, Name, Text, ButtonIcon, ButtonText } from "./styled";
 import personalPhoto from '../../images/personal-photo.jpg';
 
 const Header = () => {
@@ -9,9 +9,9 @@ const Header = () => {
                 <Caption>
                     THIS IS
                 </Caption>
-                <Title>
+                <Name>
                     Maksim Padrabinkin
-                </Title>
+                </Name>
                 <Text>
                     👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
                 </Text>
