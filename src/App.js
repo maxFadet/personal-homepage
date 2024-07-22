@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Section from './components/Article';
 import ProjectsSection from './components/ProjectsSection';
 import { myCurrentSkills, myFutureSkills } from './features/Homepage/skills';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         body={myFutureSkills}
       />
       <ProjectsSection />
+      <Footer />
     </Container>
   );
 }
