@@ -9,16 +9,6 @@ export const Article = styled.article`
   align-items: center;
   border-radius: 4px;
 
-  ${({ variant }) =>
-        variant &&
-        css`
-      grid-template-columns: 1fr;
-      background-color: ${({ theme }) => theme.color.white};
-      margin: 72px auto;
-      box-shadow: rgba(9, 10, 51, 0.02) 0px -2px 50px 0px;
-      padding: 32px;
-    `}
-
   @media (max-width: 1120px) {
     grid-template-columns: 1fr;
   }
@@ -45,19 +35,12 @@ export const Caption = styled.div`
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
-export const Name = styled.header`
+export const Name = styled.h1`
   color: ${({ theme }) => theme.color.mineShaft};
   font-size: 38px;
   font-weight: 900;
   line-height: 45.99px;
   letter-spacing: 0.05em;
-
-  ${({ h2 }) =>
-        h2 &&
-        css`
-      font-size: 30px;
-      line-height: 36.31px;
-    `}
 `;
 
 export const Text = styled.p`
