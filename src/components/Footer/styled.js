@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as Facebook } from '../../images/Facebook.svg';
-import { ReactComponent as Github } from '../../images/Github.svg';
-import { ReactComponent as Instagram } from '../../images/Instagram.svg';
-import { ReactComponent as LinkedIN } from '../../images/LinkedIN.svg';
 
 export const Article = styled.footer`
   margin-top: 120px;
@@ -58,21 +54,10 @@ export const Icons = styled.div`
 `;
 
 export const LinkSocialMedia = styled.a`
-  color: ${({ theme }) => theme.color.mineShaft}
-`;
+  color: ${({ theme }) => theme.color.mineShaft};
+  transition: color 0.3s ease;
 
-export const IconGithub = styled(Github)`
-   color: ${({ theme }) => theme.color.mineShaft}
-`;
-
-export const IconFacebook = styled(Facebook)`
-   color: ${({ theme }) => theme.color.mineShaft}
-`;
-
-export const IconLinkedIN = styled(LinkedIN)`
-   color: ${({ theme }) => theme.color.mineShaft}
-`;
-
-export const IconInstagram = styled(Instagram)`
-   color: ${({ theme }) => theme.color.mineShaft}
+  &:hover {
+      color: ${({ theme }) => theme.color.scienceBlue};
+  }
 `;

@@ -1,4 +1,5 @@
-import { Caption, Content, Article, Link, Text, IconFacebook, IconLinkedIN, IconInstagram, Icons, IconGithub } from "./styled";
+import { Caption, Content, Article, Link, Text, Icons, LinkSocialMedia } from "./styled";
+import { socialIcons } from './socialIcons';
 
 const Footer = () => {
     return (
@@ -16,10 +17,14 @@ const Footer = () => {
                     some help to make your ideas come to life, feel free to contact me 🤟
                 </Text>
                 <Icons>
-                    <IconGithub />
-                    <IconFacebook />
-                    <IconLinkedIN />
-                    <IconInstagram />
+                    {socialIcons.map((social, index) => {
+                        const IconComponent = social.icon;
+                        return (
+                            <LinkSocialMedia key={index} href={social.url} target="_blank" title={social.name}>
+                                <IconComponent />
+                            </LinkSocialMedia>
+                        );
+                    })}
                 </Icons>
             </Content>
         </Article>
