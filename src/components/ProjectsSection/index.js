@@ -6,7 +6,7 @@ import {
     ProjectsGrid,
     ProjectCard,
     ProjectTitle,
-    ProjectDescription,
+    ProjectText,
     ProjectLinks,
     ProjectLink,
     Mark,
@@ -58,10 +58,12 @@ const ProjectsSection = () => {
                     {projects.map((project, index) => (
                         <ProjectCard key={index}>
                             <ProjectTitle>{project.title}</ProjectTitle>
-                            <ProjectDescription>{project.description}</ProjectDescription>
+                            <ProjectText>{project.description}</ProjectText>
                             <ProjectLinks>
-                                <ProjectLink href={project.demoLink} target="_blank" rel="noopener noreferrer">Demo: {project.demoLink}</ProjectLink>
-                                <ProjectLink href={project.codeLink} target="_blank" rel="noopener noreferrer">Code: {project.codeLink}</ProjectLink>
+                                <ProjectText>Demo: </ProjectText>
+                                <ProjectLink href={project.demoLink} target="_blank" rel="noopener noreferrer">{project.demoLink}</ProjectLink>
+                                <ProjectText>Code: </ProjectText>
+                                <ProjectLink href={project.codeLink} target="_blank" rel="noopener noreferrer">{project.codeLink}</ProjectLink>
                             </ProjectLinks>
                         </ProjectCard>
                     ))}

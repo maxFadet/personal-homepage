@@ -61,6 +61,9 @@ export const ProjectCard = styled.div`
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.iron};
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);
@@ -76,11 +79,11 @@ export const ProjectTitle = styled.h3`
   letter-spacing: 0.05em;
 `;
 
-export const ProjectDescription = styled.p`
+export const ProjectText = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
-  font-size: 16px;
-  line-height: 22px;
-  margin: 24px 0;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
 `;
 
 export const ProjectLinks = styled.div`
@@ -91,7 +94,7 @@ export const ProjectLinks = styled.div`
 
 export const ProjectLink = styled.a`
   color: ${({ theme }) => theme.color.scienceBlue};
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 25px;
   text-decoration: none;
 `;
