@@ -1,10 +1,9 @@
-import React from 'react';
 import Header from '../../components/Header';
 import Section from '../../components/Article';
 import Footer from '../../components/Footer';
 import ProjectsSection from '../../components/ProjectsSection';
 import { currentSkills, futureSkills } from './skills';
-import { Container } from '../../components/Container/index';
+import { Container } from '../../components/Container';
 
 const Homepage = () => (
     <Container>

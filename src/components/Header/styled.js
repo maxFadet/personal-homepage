@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as Message } from '../../images/Message.svg';
 
 export const Article = styled.article`
@@ -54,7 +54,7 @@ export const Text = styled.p`
 
 export const Button = styled.button`
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
   width: 154px;
   height: 49px;
   padding: 12px 16px;
