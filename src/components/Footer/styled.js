@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Article = styled.footer`
-  margin-top: 120px;
-  width: 691px;
+  padding-top: 120px;
+  max-width: 691px;
+  width: 100%;
 
-  @media (max-width: 1120px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 767px) {
+    padding-top: 48px;
   }
 `;
 
@@ -35,6 +36,11 @@ export const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21.78px;
   }
 `;
 
