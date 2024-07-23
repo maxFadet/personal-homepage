@@ -1,26 +1,14 @@
-import { Container } from './components/Container';
-import Header from './components/Header';
-import Section from './components/Article';
-import ProjectsSection from './components/ProjectsSection';
-import { myCurrentSkills, myFutureSkills } from './features/Homepage/skills';
-import Footer from './components/Footer';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './GlobalStyle';
+import theme from './theme';
+import Homepage from './features/Homepage';
 
-function App() {
-  return (
-    <Container>
-      <Header />
-      <Section
-        title="My skillset includes 🛠️"
-        body={myCurrentSkills}
-      />
-      <Section
-        title="What I want to learn next 🚀"
-        body={myFutureSkills}
-      />
-      <ProjectsSection />
-      <Footer />
-    </Container>
-  );
-}
+const App = () => (
+    <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Homepage />
+    </ThemeProvider>
+);
 
 export default App;
