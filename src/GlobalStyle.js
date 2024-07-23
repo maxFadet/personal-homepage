@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
     }
@@ -14,3 +14,5 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${({ theme }) => theme.color.whiteLilac};
     }
 `;
+
+export default GlobalStyle;

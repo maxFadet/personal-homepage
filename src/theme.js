@@ -8,3 +8,5 @@ export const theme = {
         iron: "#D1D5DA4D",
     },
 };
+
+export default theme;
