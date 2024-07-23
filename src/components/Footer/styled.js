@@ -13,6 +13,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: flex-start; 
 `;
 
 export const Caption = styled.div`
@@ -34,7 +35,7 @@ export const Link = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
-  };
+  }
 `;
 
 export const Text = styled.p`
