@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as markGithub } from '../../images/mark-github.svg';
+import { ReactComponent as GithubIcon } from '../../images/mark-github.svg';
 
 export const Container = styled.article`
   padding: 0;
@@ -15,14 +15,14 @@ export const Content = styled.div`
   gap: 16px;
 `;
 
-export const Wrapper = styled.div`
+export const HeaderWrapper = styled.div`
   width: 195px;
   margin: auto;
   text-align: center;
 `;
 
-export const Mark = styled(markGithub)`
-   color: ${({ theme }) => theme.color.scienceBlue};
+export const GithubMark = styled(GithubIcon)`
+  color: ${({ theme }) => theme.color.scienceBlue};
 `;
 
 export const Header = styled.h2`
@@ -39,10 +39,10 @@ export const SubHeader = styled.p`
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  color: ${({ theme }) => theme.color.mineShaft}
+  color: ${({ theme }) => theme.color.mineShaft};
 `;
 
-export const ProjectsGrid = styled.div`
+export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -53,10 +53,9 @@ export const ProjectsGrid = styled.div`
   }
 `;
 
-export const ProjectCard = styled.div`
+export const Tile = styled.div`
   background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03);
-  box-shadow: 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.iron};
@@ -70,7 +69,7 @@ export const ProjectCard = styled.div`
   }
 `;
 
-export const ProjectTitle = styled.h3`
+export const Title = styled.h3`
   color: ${({ theme }) => theme.color.scienceBlue};
   font-size: 24px;
   font-weight: 700;
@@ -79,20 +78,20 @@ export const ProjectTitle = styled.h3`
   letter-spacing: 0.05em;
 `;
 
-export const ProjectText = styled.p`
+export const Description = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   font-size: 18px;
   line-height: 25px;
   margin: 0;
 `;
 
-export const ProjectLinks = styled.div`
+export const Links = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px;
 `;
 
-export const ProjectLink = styled.a`
+export const Link = styled.a`
   color: ${({ theme }) => theme.color.scienceBlue};
   font-size: 18px;
   line-height: 25px;

@@ -1,76 +1,43 @@
-import React from 'react';
 import {
     Container,
     Content,
+    HeaderWrapper,
+    GithubMark,
     Header,
-    ProjectsGrid,
-    ProjectCard,
-    ProjectTitle,
-    ProjectText,
-    ProjectLinks,
-    ProjectLink,
-    Mark,
-    Wrapper,
-    SubHeader
+    SubHeader,
+    Grid,
+    Tile,
+    Title,
+    Description,
+    Links,
+    Link,
 } from "./styled";
+import projects from "./projects";
 
-const projects = [
-    {
-        title: "Movies Browser",
-        description: "Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.",
-        demoLink: "https://link.demo.com",
-        codeLink: "https://link.code.com"
-    },
-    {
-        title: "Movies Browser",
-        description: "Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.",
-        demoLink: "https://link.demo.com",
-        codeLink: "https://link.code.com"
-    },
-    {
-        title: "Movies Browser",
-        description: "Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.",
-        demoLink: "https://link.demo.com",
-        codeLink: "https://link.code.com"
-    },
-    {
-        title: "Movies Browser",
-        description: "Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.",
-        demoLink: "https://link.demo.com",
-        codeLink: "https://link.code.com"
-    },
-];
-
-const ProjectsSection = () => {
-    return (
-        <Container>
-            <Content>
-                <Wrapper>
-                    <Mark />
-                    <Header>
-                        Portfolio
-                    </Header>
-                    <SubHeader>
-                        My recent projects
-                    </SubHeader>
-                </Wrapper>
-                <ProjectsGrid>
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index}>
-                            <ProjectTitle>{project.title}</ProjectTitle>
-                            <ProjectText>{project.description}</ProjectText>
-                            <ProjectLinks>
-                                <ProjectText>Demo: </ProjectText>
-                                <ProjectLink href={project.demoLink} target="_blank" rel="noopener noreferrer">{project.demoLink}</ProjectLink>
-                                <ProjectText>Code: </ProjectText>
-                                <ProjectLink href={project.codeLink} target="_blank" rel="noopener noreferrer">{project.codeLink}</ProjectLink>
-                            </ProjectLinks>
-                        </ProjectCard>
-                    ))}
-                </ProjectsGrid>
-            </Content>
-        </Container>
-    );
-};
+const ProjectsSection = () => (
+    <Container>
+        <Content>
+            <HeaderWrapper>
+                <GithubMark />
+                <Header>Portfolio</Header>
+                <SubHeader>My recent projects</SubHeader>
+            </HeaderWrapper>
+            <Grid>
+                {projects.map((project, index) => (
+                    <Tile key={index}>
+                        <Title>{project.title}</Title>
+                        <Description>{project.description}</Description>
+                        <Links>
+                            <Description>Demo: </Description>
+                            <Link href={project.demoLink} target="_blank" rel="noopener noreferrer">{project.demoLink}</Link>
+                            <Description>Code: </Description>
+                            <Link href={project.codeLink} target="_blank" rel="noopener noreferrer">{project.codeLink}</Link>
+                        </Links>
+                    </Tile>
+                ))}
+            </Grid>
+        </Content>
+    </Container>
+);
 
 export default ProjectsSection;
