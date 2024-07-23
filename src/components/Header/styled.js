@@ -18,6 +18,7 @@ export const Image = styled.img`
   height: 384px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 `;
 
 export const Content = styled.div`
