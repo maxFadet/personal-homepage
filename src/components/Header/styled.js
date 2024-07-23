@@ -3,11 +3,10 @@ import { ReactComponent as Message } from '../../images/Message.svg';
 
 export const Article = styled.article`
   padding: 0;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 72px;
+  display: flex;
+  position: relative;
+  gap: 66px;
   align-items: center;
-  border-radius: 4px;
 
   @media (max-width: 1120px) {
     grid-template-columns: 1fr;

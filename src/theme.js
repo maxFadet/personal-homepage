@@ -6,6 +6,7 @@ export const theme = {
         mineShaft: "#252525",
         scienceBlue: "#0366D6",
         iron: "#D1D5DA4D",
+        mercury: "#E5E5E5",
     },
 };
 

@@ -1,8 +1,10 @@
 import { Button, Caption, Content, Article, Image, Name, Text, ButtonIcon, ButtonText } from "./styled";
 import personalPhoto from '../../images/personal-photo.jpg';
+import { Switch } from "./Switch";
 
 const Header = () => (
     <Article>
+        <Switch />
         <Image src={personalPhoto} alt="Maksim Padrabinkin" />
         <Content>
             <Caption>THIS IS</Caption>
