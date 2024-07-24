@@ -4,7 +4,7 @@ export const Switch = () => {
     return (
         <Wrapper>
             <Text>
-                DARK MODE OFF
+                dark mode off
             </Text>
             <Button>
                 <IconWrapper>

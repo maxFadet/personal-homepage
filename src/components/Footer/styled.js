@@ -30,7 +30,6 @@ export const Link = styled.a`
   font-size: 32px;
   font-weight: 900;
   line-height: 38.73px;
-  letter-spacing: 0.05em;
   text-decoration: none;
   transition: color 0.3s ease 0s;
 
@@ -49,7 +48,6 @@ export const Text = styled.p`
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
-  letter-spacing: 0.05em;
   margin: 0;
 `;
 

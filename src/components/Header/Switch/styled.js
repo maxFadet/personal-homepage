@@ -17,6 +17,8 @@ export const Text = styled.span`
   line-height: 15.6px;
   font-weight: 700;
   font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
   color: ${({ theme }) => theme.color.slateGray};
 `;
 

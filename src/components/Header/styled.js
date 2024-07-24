@@ -3,12 +3,13 @@ import { ReactComponent as Message } from '../../images/Message.svg';
 
 export const Article = styled.article`
   padding: 0;
-  display: flex;
+  display: grid;
   position: relative;
   gap: 66px;
   align-items: center;
+  grid-template-columns: 1fr auto;
 
-  @media (max-width: 1120px) {
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -19,6 +20,16 @@ export const Image = styled.img`
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+
+  @media (max-width: 767px) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (max-width: 480px) {
+    width: 128px;
+    height: 128px;
+  }
 `;
 
 export const Content = styled.div`
@@ -40,7 +51,10 @@ export const Name = styled.h1`
   font-size: 38px;
   font-weight: 900;
   line-height: 45.99px;
-  letter-spacing: 0.05em;
+
+  @media (max-width: 996px) {
+    font-size: 22px;
+  }
 `;
 
 export const Text = styled.p`
@@ -48,7 +62,6 @@ export const Text = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0.05em;
   text-align: left;
 `;
 
@@ -81,6 +94,5 @@ export const ButtonText = styled.div`
 font-size: 20.06px;
 font-weight: 600;
 line-height: 24.28px;
-letter-spacing: 0.05em;
 text-align: center;
 `;

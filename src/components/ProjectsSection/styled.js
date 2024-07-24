@@ -30,7 +30,6 @@ export const Header = styled.h2`
   font-size: 30px;
   font-weight: 900;
   line-height: 36.31px;
-  letter-spacing: 0.05em;
   text-align: center;
   margin: 12px 0 8px;
 `;
@@ -75,7 +74,6 @@ export const Title = styled.h3`
   font-weight: 700;
   margin: 0;
   line-height: 29.05px;
-  letter-spacing: 0.05em;
 `;
 
 export const Description = styled.p`

@@ -24,7 +24,6 @@ export const Header = styled.header`
   font-size: 30px;
   font-weight: 900;
   line-height: 36.31px;
-  letter-spacing: 0.05em;
 `;
 
 export const Table = styled.div`
@@ -56,7 +55,6 @@ export const Text = styled.span`
 font-size: 18px;
 font-weight: 400;
 line-height: 25.2px;
-letter-spacing: 0.05em;
 text-align: left;
 margin-left: 16px;
 `;
