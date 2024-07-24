@@ -66,6 +66,10 @@ export const Tile = styled.div`
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);
   }
+
+  @media (max-width: 990px) {
+    padding: 26px;
+  }
 `;
 
 export const Title = styled.h3`
