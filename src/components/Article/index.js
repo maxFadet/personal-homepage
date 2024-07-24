@@ -1,10 +1,8 @@
-import { Container, Content, Header, Table, List, Item, Bullet, Text } from "./styled";
+import { Container, Header, List, Item, Bullet, Text } from "./styled";
 
 const Section = ({ title, skills }) => (
     <Container>
-        <Content>
             <Header>{title}</Header>
-            <Table>
                 <List>
                     {skills.map(skill => (
                         <Item key={skill}>
@@ -13,8 +11,6 @@ const Section = ({ title, skills }) => (
                         </Item>
                     ))}
                 </List>
-            </Table>
-        </Content>
     </Container>
 );
 

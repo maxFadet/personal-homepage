@@ -20,6 +20,10 @@ export const Text = styled.span`
   text-transform: uppercase;
   letter-spacing: 0;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button`
