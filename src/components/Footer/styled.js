@@ -15,14 +15,22 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 24px;
   align-items: flex-start; 
+
+  @media (max-width: 1200px) {
+    gap: 18px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 12px;
+  }
 `;
 
 export const Caption = styled.div`
-  line-height: 15.6px;
-  text-align: left;
+  line-height: 15px;
   font-weight: 700;
   font-size: 12px;
   color: ${({ theme }) => theme.color.slateGray};
+  letter-spacing: 0;
 `;
 
 export const Link = styled.a`
@@ -47,8 +55,18 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.color.mineShaft};
   font-size: 18px;
   font-weight: 400;
-  line-height: 25.2px;
+  line-height: 25px;
   margin: 0;
+
+  @media (max-width: 1200px) {
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    line-height: 17px;
+    font-size: 14px;
+  }
 `;
 
 export const Icons = styled.div`
@@ -56,6 +74,16 @@ export const Icons = styled.div`
   flex-direction: row;
   gap: 24px;
   padding-top: 24px;
+
+  @media (max-width: 1200px) {
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 12px;
+    gap: 16px;
+  }
 `;
 
 export const LinkSocialMedia = styled.a`
@@ -63,6 +91,18 @@ export const LinkSocialMedia = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-      color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.scienceBlue};
+  }
+
+  svg {
+    @media (max-width: 1200px) {
+    width: 40px;
+    height: 40px;
+    }
+
+    @media (max-width: 480px) {
+    width: 32px;
+    height: 232x;
+    }
   }
 `;

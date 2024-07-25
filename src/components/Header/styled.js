@@ -40,10 +40,10 @@ export const Content = styled.div`
 `;
 
 export const Caption = styled.div`
-  line-height: 15.6px;
-  text-align: left;
+  line-height: 15px;
   font-weight: 700;
   font-size: 12px;
+  letter-spacing: 0;
   color: ${({ theme }) => theme.color.slateGray};
 `;
 
