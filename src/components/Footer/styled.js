@@ -5,7 +5,11 @@ export const Article = styled.footer`
   max-width: 691px;
   width: 100%;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
+    padding-top: 84px;
+  }
+
+  @media (max-width: 480px) {
     padding-top: 48px;
   }
 `;

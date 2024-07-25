@@ -9,12 +9,14 @@ export const Container = styled.article`
   padding: 32px;
   border-radius: 4px;
 
-  @media (max-width: 480px) {
-    padding: 16px;
-  }
-
   @media (max-width: 1200px) {
     padding: 24px;
+    margin: 60px auto 0;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 16px;
+    margin: 48px auto 0;
   }
 `;
 

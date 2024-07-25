@@ -11,8 +11,16 @@ export const Container = styled.article`
 
 export const HeaderWrapper = styled.header`
   width: 195px;
-  margin: auto;
+  margin: 72px auto 0;
   text-align: center;
+
+  @media (max-width: 1200px) {
+    margin: 60px auto 0;
+  }
+  
+  @media (max-width: 480px) {
+    margin: 48px auto 0;
+  }
 `;
 
 export const GithubMark = styled(GithubIcon)`
