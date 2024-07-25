@@ -26,9 +26,13 @@ const ProjectsSection = () => (
                     <Description>{project.description}</Description>
                     <Links>
                         <Description>Demo: </Description>
-                        <Link href={project.demoLink} target="_blank" rel="noopener noreferrer">{project.demoLink}</Link>
+                        <Link href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                            {project.demoLink}
+                        </Link>
                         <Description>Code: </Description>
-                        <Link href={project.codeLink} target="_blank" rel="noopener noreferrer">{project.codeLink}</Link>
+                        <Link href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                            {project.codeLink}
+                        </Link>
                     </Links>
                 </Tile>
             ))}

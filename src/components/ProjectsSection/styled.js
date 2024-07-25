@@ -114,8 +114,7 @@ export const Title = styled.h3`
   }
 `;
 
-export const Description = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+const TextBase = styled.p`
   font-size: 18px;
   line-height: 25px;
   margin: 0;
@@ -131,16 +130,32 @@ export const Description = styled.p`
   }
 `;
 
+export const Description = styled(TextBase)`
+  color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const Link = styled(TextBase).attrs({ as: 'a' })`
+  color: ${({ theme }) => theme.color.scienceBlue};
+  text-decoration-color: rgb(3 102 214 / 20%);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  transition: color 0.3s ease 0s, 
+  text-decoration-color 0.3s ease 0s, 
+  font-weight 0.3s ease 0s;
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    text-decoration-color: ${({ theme }) => theme.color.scienceBlue};
+    font-weight: 450;
+    }
+`;
+
 export const Links = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 8px;
   align-items: center;
-`;
-
-export const Link = styled.a`
-  color: ${({ theme }) => theme.color.scienceBlue};
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
 `;
