@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { ReactComponent as Ellipse } from '../../images/Ellipse.svg';
 
 export const Container = styled.article`
   background-color: ${({ theme }) => theme.color.white};
   margin: 72px auto;
   box-shadow: 
-  rgba(9, 10, 51, 0.03) 0px 16px 58px, 
-  rgba(9, 10, 51, 0.02) 0px -2px 50px;
+    rgba(9, 10, 51, 0.03) 0px 16px 58px, 
+    rgba(9, 10, 51, 0.02) 0px -2px 50px;
   padding: 32px;
   border-radius: 4px;
 
@@ -58,28 +57,35 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-display: flex;
-align-items: center;
+  position: relative;
+  padding-left: 28px;
+  line-height: 0;
+
+  ::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: rgba(3, 102, 214, 1);
+    font-size: 30px;
+  }
+
+  @media (max-width: 480px) {
+    ::before {
+      font-size: 20px;
+      padding-left: 0;
+    }
+  }
 `;
 
 export const Text = styled.span`
   color: ${({ theme }) => theme.color.slateGray};
-font-size: 18px;
-font-weight: 400;
-line-height: 25.2px;
-text-align: left;
-margin-left: 16px;
-
-@media (max-width: 480px) {
-    line-height: 17px;
-    font-size: 14px;
-  }
-`;
-
-export const Bullet = styled(Ellipse)`
-  color: rgba(3, 102, 214, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
 
   @media (max-width: 480px) {
-    width: 6px;
+    line-height: 17px;
+    font-size: 14px;
+    margin: -10px;
   }
 `;
