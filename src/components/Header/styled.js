@@ -85,9 +85,9 @@ export const Text = styled.p`
   }
 `;
 
-export const Button = styled.button`
-display: flex;
-justify-content: space-between;
+export const ButtonLink = styled.a`
+  display: flex;
+  justify-content: space-between;
   width: 154px;
   height: 49px;
   padding: 12px 16px;
@@ -95,6 +95,9 @@ justify-content: space-between;
   background: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
   border: 1px solid rgba(209, 213, 218, 0.3);
+  outline: transparent solid 3px;
+  text-decoration: none;
+  transition: outline 0.3s ease 0s;
 
   &:hover {
     outline: 3px solid rgba(140, 194, 255);
@@ -102,6 +105,7 @@ justify-content: space-between;
 
   &:active {
     box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
+    outline: none;
   }
 `;
 
