@@ -6,22 +6,22 @@ import { ReactComponent as LinkedIN } from '../../images/LinkedIN.svg';
 export const socialIcons = [
   {
     name: 'GitHub',
-    url: 'https://github.com/your-profile',
+    url: 'https://github.com/maxFadet',
     icon: Github
   },
   {
     name: 'Facebook',
-    url: 'https://facebook.com/your-profile',
+    url: 'https://www.facebook.com/averybodymax',
     icon: Facebook
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/your-profile',
+    url: 'https://www.linkedin.com/in/max-padrabinkin-4a739a251/',
     icon: LinkedIN
   },
   {
     name: 'Instagram',
-    url: 'https://instagram.com/your-profile',
+    url: 'https://www.instagram.com/prost0max/',
     icon: Instagram
   }
 ];
