@@ -75,6 +75,10 @@ export const Grid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: 480px) {
+    gap: 16px;
+  }
 `;
 
 export const Tile = styled.div`
@@ -85,7 +89,7 @@ export const Tile = styled.div`
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.color.iron};
-  transition: 0.3s;
+  transition: border 0.3s ease 0s;;
   display: flex;
   flex-direction: column;
   gap: 24px;
