@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
-    HeaderWrapper,
-    GithubMark,
-    Header,
-    SubHeader,
     Grid,
     Tile,
     Title,
@@ -12,6 +8,7 @@ import {
     Links,
     Link,
 } from "./styled";
+import { Head } from "./Head";
 
 const ProjectsSection = () => {
     const [projects, setProjects] = useState([]);
@@ -30,11 +27,7 @@ const ProjectsSection = () => {
 
     return (
         <>
-            <HeaderWrapper>
-                <GithubMark />
-                <Header>Portfolio</Header>
-                <SubHeader>My recent projects</SubHeader>
-            </HeaderWrapper>
+            <Head />
             <Grid>
                 {projects.map(project => (
                     <Tile key={project.id}>
