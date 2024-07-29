@@ -1,17 +1,7 @@
 import styled from "styled-components";
 
 export const Article = styled.footer`
-  padding-top: 120px;
   max-width: 691px;
-  width: 100%;
-
-  @media (max-width: 1200px) {
-    padding-top: 84px;
-  }
-
-  @media (max-width: 480px) {
-    padding-top: 48px;
-  }
 `;
 
 export const Content = styled.div`

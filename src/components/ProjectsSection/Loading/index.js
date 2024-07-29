@@ -1,4 +1,4 @@
-import { Wrapper, Text, LoadingIcon } from "./styled"
+import { Wrapper, Text, LoadingIcon } from "./styled";
 
 export const Loading = () => {
     return (
@@ -8,5 +8,5 @@ export const Loading = () => {
             </Text>
             <LoadingIcon />
         </Wrapper>
-    )
+    );
 }

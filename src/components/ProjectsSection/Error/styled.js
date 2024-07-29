@@ -4,12 +4,20 @@ import { ReactComponent as Danger } from '../../../images/Danger.svg';
 export const Wrapper = styled.div`
    text-align: center;
    margin: 88px 0 140px;
+
+   @media (max-width: 1200px) {
+    margin: 60px auto 100px;
+  }
+  
+  @media (max-width: 480px) {
+    margin: 38px auto 70px;
+  }
 `;
 
 export const ErrorIcon = styled(Danger)`
+ 
   @media(max-width: 480px) {
-    width: 40px;
-    height: 40px;
+    width: 32px;
     }
 `;
 
@@ -17,18 +25,44 @@ export const Title = styled.h3`
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
+  margin: 23px 0 32px;
+  
+  @media (max-width: 1200px) {
+    margin: 17px 0 24px;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 18px;
+    line-height: 24px;
+    }
 `;
 
 export const Paragraph = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  margin: 0;
+
+  @media (max-width: 1200px) {
+    line-height: 24px;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 16px;
+    line-height: 22px;
+    }
 `;
 
 export const ButtonLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
   width: 154px;
   height: 49px;
   padding: 12px 16px;
+  margin-top: 32px;
+  gap: 16px;
   border-radius: 4px;
   background: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
@@ -45,11 +79,4 @@ export const ButtonLink = styled.a`
     box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
     outline: none;
   }
-`;
-
-export const ButtonText = styled.div`
-font-size: 20.06px;
-font-weight: 600;
-line-height: 24px;
-text-align: center;
 `;
