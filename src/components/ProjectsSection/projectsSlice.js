@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const projectsSlice = createSlice({
     name: 'projects',
     initialState: {
-        projects: [],
+        data: [],
         loading: false,
         error: false,
     },

@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import Section from '../../components/Article';
 import Footer from '../../components/Footer';
-import ProjectsSection from '../../components/ProjectsSection';
+import ProjectsSection from '../../components/ProjectsSection/projects';
 import { currentSkills, futureSkills } from './skills';
 import { Container } from '../../components/Container';
 

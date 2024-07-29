@@ -117,6 +117,6 @@ export const ButtonIcon = styled(Message)`
 export const ButtonText = styled.div`
 font-size: 20.06px;
 font-weight: 600;
-line-height: 24.28px;
+line-height: 24px;
 text-align: center;
 `;

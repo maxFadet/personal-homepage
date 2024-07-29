@@ -1,4 +1,4 @@
-import { LoadingIcon, Wrapper, LoadingIcon } from "./styled"
+import { Wrapper, Text, LoadingIcon } from "./styled"
 
 export const Loading = () => {
     return (

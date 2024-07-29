@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import {
     Grid,
     Tile,
@@ -8,22 +8,24 @@ import {
     Links,
     Link,
 } from "./styled";
+import { fetchDataRequest } from './projectsSlice';
 import { Head } from "./Head";
 
 const ProjectsSection = () => {
-    const [projects, setProjects] = useState([]);
+    const dispatch = useDispatch();
+    const { data: projects, loading, error } = useSelector(state => state.projects);
 
     useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const response = await axios.get('https://api.github.com/users/maxFadet/repos');
-                setProjects(response.data);
-            } catch (error) {
-                console.error("Error fetching data from GitHub", error);
-            }
-        };
-        fetchProjects();
-    }, []);
+        dispatch(fetchDataRequest());
+    }, [dispatch]);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     return (
         <>
