@@ -1,18 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
-  padding: 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 72px;
-  align-items: center;
-`;
-
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  padding-top: 24px;
+  margin: 24px 0 120px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -20,6 +12,7 @@ export const Grid = styled.div`
 
   @media (max-width: 480px) {
     gap: 16px;
+    margin-bottom: 48px;
   }
 `;
 
