@@ -15,10 +15,9 @@ export const Wrapper = styled.div`
 `;
 
 export const ErrorIcon = styled(Danger)`
- 
   @media(max-width: 480px) {
     width: 32px;
-    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -34,7 +33,7 @@ export const Title = styled.h3`
   @media(max-width: 480px) {
     font-size: 18px;
     line-height: 24px;
-    }
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -50,26 +49,24 @@ export const Paragraph = styled.p`
   @media(max-width: 480px) {
     font-size: 16px;
     line-height: 22px;
-    }
+  }
 `;
 
 export const ButtonLink = styled.a`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   font-size: 20px;
   font-weight: 600;
-  width: 154px;
-  height: 49px;
   padding: 12px 16px;
   margin-top: 32px;
-  gap: 16px;
   border-radius: 4px;
   background: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
   border: 1px solid rgba(209, 213, 218, 0.3);
-  outline: transparent solid 3px;
   text-decoration: none;
   transition: outline 0.3s ease 0s;
+  white-space: nowrap;
 
   &:hover {
     outline: 3px solid rgba(140, 194, 255);
