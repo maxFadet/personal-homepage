@@ -87,6 +87,8 @@ export const Text = styled.p`
 `;
 
 export const ButtonIcon = styled(Message)`
-  width: 24px;
-  height: 24px;
+ @media (max-width: 480px) {
+    width: 20px;
+    height: 18px;
+  }
 `;

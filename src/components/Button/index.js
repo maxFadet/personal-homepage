@@ -6,6 +6,7 @@ export const BaseButton = styled.a`
   justify-content: center;
   font-size: 20px;
   font-weight: 600;
+  gap: 16px;
   padding: 12px 16px;
   border-radius: 4px;
   background: ${({ theme }) => theme.color.scienceBlue};
@@ -24,11 +25,9 @@ export const BaseButton = styled.a`
     box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
     outline: none;
   }
-`;
-
-export const ButtonWithIcon = styled(BaseButton)`
-  svg {
-    margin-right: 16px;
-    max-width: fit-content;
+  
+  @media (max-width: 480px) {
+    font-size: 18px;
+    gap: 12px;
   }
 `;

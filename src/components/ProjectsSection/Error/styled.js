@@ -40,7 +40,7 @@ export const Paragraph = styled.p`
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  margin: 0 0 32px;
+  margin-bottom: 32px;
 
   @media (max-width: 1200px) {
     line-height: 24px;
@@ -49,5 +49,6 @@ export const Paragraph = styled.p`
   @media(max-width: 480px) {
     font-size: 16px;
     line-height: 22px;
+    margin-bottom: 24px;
   }
 `;

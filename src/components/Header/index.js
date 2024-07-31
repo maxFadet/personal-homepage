@@ -1,5 +1,5 @@
 import { Caption, Content, Article, Image, Name, Text, ButtonIcon } from "./styled";
-import { ButtonWithIcon } from "../Button";
+import { BaseButton } from "../Button";
 import personalPhoto from '../../images/personal-photo.jpg';
 import { Switch } from "./Switch";
 
@@ -11,10 +11,10 @@ const Header = () => (
             <Caption>THIS IS</Caption>
             <Name>Maksim Padrabinkin</Name>
             <Text>👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.</Text>
-            <ButtonWithIcon href="mailto:maxfadet@gmail.com" target="_blank" title="My email">
+            <BaseButton href="mailto:maxfadet@gmail.com" target="_blank" title="My email">
                 <ButtonIcon />
                 Hire Me
-            </ButtonWithIcon>
+            </BaseButton>
         </Content>
     </Article>
 );
