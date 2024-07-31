@@ -37,6 +37,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
+  align-items: flex-start;
 `;
 
 export const Caption = styled.div`
@@ -85,38 +86,7 @@ export const Text = styled.p`
   }
 `;
 
-export const ButtonLink = styled.a`
-  display: flex;
-  justify-content: space-between;
-  width: 154px;
-  height: 49px;
-  padding: 12px 16px;
-  border-radius: 4px;
-  background: ${({ theme }) => theme.color.scienceBlue};
-  color: ${({ theme }) => theme.color.white};
-  border: 1px solid rgba(209, 213, 218, 0.3);
-  outline: transparent solid 3px;
-  text-decoration: none;
-  transition: outline 0.3s ease 0s;
-
-  &:hover {
-    outline: 3px solid rgba(140, 194, 255);
-  }
-
-  &:active {
-    box-shadow: 0px 2px 0px 0px rgba(20, 70, 32, 0.2) inset;
-    outline: none;
-  }
-`;
-
 export const ButtonIcon = styled(Message)`
   width: 24px;
   height: 24px;
-`;
-
-export const ButtonText = styled.div`
-font-size: 20.06px;
-font-weight: 600;
-line-height: 24px;
-text-align: center;
 `;

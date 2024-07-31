@@ -1,4 +1,5 @@
-import { ButtonLink, ErrorIcon, Paragraph, Title, Wrapper } from "./styled";
+import { ErrorIcon, Paragraph, Title, Wrapper } from "./styled";
+import { BaseButton } from "../../Button"
 
 export const Error = () => {
     return (
@@ -11,9 +12,9 @@ export const Error = () => {
                 Sorry, failed to load Github projects. <br />
                 You can check them directly on Github.
             </Paragraph>
-            <ButtonLink href="https://github.com/maxFadet" target="_blank" title="My Github">
+            <BaseButton href="https://github.com/maxFadet" target="_blank" title="My Github">
                 Go to Github
-            </ButtonLink>
+            </BaseButton>
         </Wrapper>
     );
 };
