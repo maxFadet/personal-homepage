@@ -9,7 +9,7 @@ export const Article = styled.article`
   align-items: center;
   grid-template-columns: 1fr auto;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 16px;
   }

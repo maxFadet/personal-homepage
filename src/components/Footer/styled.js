@@ -38,7 +38,7 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.colors.blue};
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     font-size: 18px;
     line-height: 21.78px;
   }
