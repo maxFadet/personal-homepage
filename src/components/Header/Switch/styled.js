@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  justify-content: center;
   align-items: center;
+  white-space: nowrap;
 `;
 
 export const Text = styled.span`
@@ -19,7 +19,6 @@ export const Text = styled.span`
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0;
-  color: ${({ theme }) => theme.color.slateGray};
 
   @media (max-width: 480px) {
     display: none;
@@ -27,27 +26,33 @@ export const Text = styled.span`
 `;
 
 export const Button = styled.button`
-display: flex;
-align-items: center;
-padding: 3px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
   width: 48px;
+  height: 24px;
   cursor: pointer;
   border-radius: 50px;
-  border: 1px solid ${({ theme }) => theme.color.slateGray};
-  background-color: ${({ theme }) => theme.color.mercury};
+  border: 1px solid ${({ theme }) => theme.colors.textDominantColor};
+  background-color: ${({ theme }) => theme.colors.backgroundSwitcher};
+  position: relative;
 `;
 
 export const Icon = styled(Switch)`
-  color: ${({ theme }) => theme.color.white};
 `;
 
 export const IconWrapper = styled.div`
-  background: ${({ theme }) => theme.color.slateGray};
+  background: ${({ theme }) => theme.colors.textDominantColor};
+  color: ${({ theme }) => theme.colors.background};
   border-radius: 50%;
   width: 20px;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease 0s
-`;
+  position: absolute;
+  top: 50%;
+  left: ${({ darkMode }) => darkMode ? "calc(100% - 22px)" : "2px"};
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+  `;

@@ -12,7 +12,7 @@ export const Switch = () => {
                 dark mode {darkMode ? "on" : "off"}
             </Text>
             <Button onClick={() => dispatch(toggleMode())}>
-                <IconWrapper>
+                <IconWrapper darkMode={darkMode}>
                     <Icon />
                 </IconWrapper>
             </Button>
