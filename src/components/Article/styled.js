@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.backgroundTile};
   margin: 72px auto;
   box-shadow: 
     rgba(9, 10, 51, 0.03) 0px 16px 58px, 
@@ -21,7 +21,7 @@ export const Container = styled.article`
 `;
 
 export const Header = styled.h2`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: 30px;
   font-weight: 900;
   line-height: 36px;
@@ -43,7 +43,7 @@ export const List = styled.ul`
   grid-gap: 8px;
   line-height: 25px;
   list-style: none;
-  border-top: 1px solid rgba(209, 213, 218, 0.3);
+  border-top: 1px solid ${({ theme }) => theme.colors.backgroundSwitcher};
   padding: 32px 0 0;
   grid-template-columns: repeat(auto-fill, minmax(auto, 314px));
   justify-content: space-between;
@@ -60,14 +60,14 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   position: relative;
-  padding-left: 28px;
+  padding-left: 27px;
   line-height: 0;
 
   ::before {
     content: "•";
     position: absolute;
     left: 0;
-    color: rgba(3, 102, 214, 1);
+    color: ${({ theme }) => theme.colors.blue};
     font-size: 30px;
   }
 
@@ -80,7 +80,7 @@ export const Item = styled.li`
 `;
 
 export const Text = styled.span`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.textDominantColor};
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;

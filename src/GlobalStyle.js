@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Inter", sans-serif;
-        background-color: ${({ theme }) => theme.color.whiteLilac};
+        background-color: ${({ theme }) => theme.colors.background};
+        color: ${({ theme }) => theme.colors.textDominantColor};
         word-break: break-word;
     }
 `;

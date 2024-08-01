@@ -45,11 +45,11 @@ export const Caption = styled.div`
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.textDominantColor};
 `;
 
 export const Name = styled.h1`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: 38px;
   font-weight: 900;
   line-height: 46px;
@@ -68,7 +68,6 @@ export const Name = styled.h1`
 `;
 
 export const Text = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;

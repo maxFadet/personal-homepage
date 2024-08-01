@@ -16,7 +16,7 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const GithubMark = styled(GithubIcon)`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.blue};
 
   @media (max-width: 480px) {
     width: 32px;
@@ -24,7 +24,7 @@ export const GithubMark = styled(GithubIcon)`
 `;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: 30px;
   font-weight: 900;
   line-height: 36px;
@@ -46,7 +46,7 @@ export const SubTitle = styled.p`
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
 
   @media (max-width: 1200px) {
     line-height: 26px;

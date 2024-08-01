@@ -23,12 +23,11 @@ export const Caption = styled.div`
   line-height: 15px;
   font-weight: 700;
   font-size: 12px;
-  color: ${({ theme }) => theme.color.slateGray};
   letter-spacing: 0;
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: 32px;
   font-weight: 900;
   line-height: 38.73px;
@@ -36,7 +35,7 @@ export const Link = styled.a`
   transition: color 0.3s ease 0s;
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 
   @media (max-width: 767px) {
@@ -46,7 +45,7 @@ export const Link = styled.a`
 `;
 
 export const Text = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -81,11 +80,11 @@ export const Icons = styled.div`
 `;
 
 export const LinkSocialMedia = styled.a`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textSecondaryColor};
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 
   svg {

@@ -31,7 +31,7 @@ export const LoadingIcon = styled(Loader)`
   margin-top: 48px;
 
   circle:nth-child(2) {
-    stroke: ${({ theme }) => theme.color.scienceBlue};
+    stroke: ${({ theme }) => theme.colors.blue};
     animation: ${rotate} 2s linear infinite;
     transform-origin: center;
   }

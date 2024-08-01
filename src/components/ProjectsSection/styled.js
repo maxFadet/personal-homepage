@@ -17,20 +17,20 @@ export const Grid = styled.div`
 `;
 
 export const Tile = styled.div`
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.backgroundTile};
   box-shadow: 
-  rgba(9, 10, 51, 0.03) 0px 16px 58px, 
-  rgba(9, 10, 51, 0.02) 0px -2px 50px;
+  0px 16px 58px ${({ theme }) => theme.colors.tileShadow}, 
+  0px -2px 50px ${({ theme }) => theme.colors.tileShadow2};
   padding: 56px;
   border-radius: 4px;
-  border: 6px solid ${({ theme }) => theme.color.iron};
+  border: 6px solid ${({ theme }) => theme.colors.border};
   transition: border 0.3s ease 0s;;
   display: flex;
   flex-direction: column;
   gap: 24px;
   
   &:hover {
-    border: 6px solid rgba(3, 102, 214, 0.2);
+    border: 6px solid ${({ theme }) => theme.colors.borderHover};
   }
 
   @media (max-width: 1200px) {
@@ -44,7 +44,7 @@ export const Tile = styled.div`
 `;
 
 export const Title = styled.h3`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.blue};
   font-size: 24px;
   font-weight: 700;
   margin: 0;
@@ -78,11 +78,11 @@ const TextBase = styled.p`
 `;
 
 export const Description = styled(TextBase)`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.textDominantColor};
 `;
 
 export const Link = styled(TextBase).attrs({ as: 'a' })`
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.blue};
   text-decoration-color: rgb(3 102 214 / 20%);
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
@@ -95,7 +95,7 @@ export const Link = styled(TextBase).attrs({ as: 'a' })`
   text-overflow: ellipsis;
 
   &:hover {
-    text-decoration-color: ${({ theme }) => theme.color.scienceBlue};
+    text-decoration-color: ${({ theme }) => theme.colors.blue};
     font-weight: 450;
     }
 `;
