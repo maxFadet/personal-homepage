@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from './GlobalStyle';
 import Homepage from './features/Homepage';
 import { lightTheme, darkTheme } from './theme';
-import { selectTheme } from './components/Header/themeSlice';
+import { selectTheme } from './components/Header/Switcher/themeSlice';
 
 function App() {
     const darkMode = useSelector(selectTheme);

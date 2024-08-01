@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Switch } from '../../../images/Switch.svg';
+import { ReactComponent as Switcher } from '../../../images/Switcher.svg';
 
 export const Wrapper = styled.div`
   max-width: 159px;
@@ -38,7 +38,7 @@ export const Button = styled.button`
   position: relative;
 `;
 
-export const Icon = styled(Switch)`
+export const Icon = styled(Switcher)`
 `;
 
 export const IconWrapper = styled.div`
