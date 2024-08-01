@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.ffb255a9.js",
+    "main.js": "/personal-homepage/static/js/main.00b2b59e.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/personal-photo.jpg": "/personal-homepage/static/media/personal-photo.af9008a01c61ddc42e1e.jpg",
     "static/media/Instagram.svg": "/personal-homepage/static/media/Instagram.6a3d319809d58e623c7d2c1b97ab9d7b.svg",
     "static/media/Github.svg": "/personal-homepage/static/media/Github.55a2a71eb7d28bbf2459a8b6e39f0211.svg",
-    "static/media/Switch.svg": "/personal-homepage/static/media/Switch.041df072c7b5d317d75e83c9e63a8463.svg",
+    "static/media/Switcher.svg": "/personal-homepage/static/media/Switcher.041df072c7b5d317d75e83c9e63a8463.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/mark-github.svg": "/personal-homepage/static/media/mark-github.571d1ccb5b05142ffef2ab4d835a907a.svg",
     "static/media/LinkedIN.svg": "/personal-homepage/static/media/LinkedIN.856fea87a0beddb4da5b790b2aa4f718.svg",
@@ -13,10 +13,10 @@
     "static/media/Message.svg": "/personal-homepage/static/media/Message.a791c274a5ca6a7bba77c80d96c14056.svg",
     "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.4fcd2e5a629788c48eff881bf1586f1a.svg",
     "static/media/Loader.svg": "/personal-homepage/static/media/Loader.f57e7f20e32cf5a7384a09592f9e14f6.svg",
-    "main.ffb255a9.js.map": "/personal-homepage/static/js/main.ffb255a9.js.map",
+    "main.00b2b59e.js.map": "/personal-homepage/static/js/main.00b2b59e.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ffb255a9.js"
+    "static/js/main.00b2b59e.js"
   ]
 }
