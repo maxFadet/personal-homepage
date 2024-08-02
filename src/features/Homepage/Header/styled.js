@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Message } from '../../images/Message.svg';
+import { ReactComponent as Message } from './Message.svg';
 
 export const Article = styled.article`
   padding: 0;

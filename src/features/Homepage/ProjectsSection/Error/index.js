@@ -1,5 +1,5 @@
 import { ErrorIcon, Paragraph, Title, Wrapper } from "./styled";
-import { BaseButton } from "../../Button"
+import { BaseButton } from "../../../../components/Button"
 
 export const Error = () => {
     return (

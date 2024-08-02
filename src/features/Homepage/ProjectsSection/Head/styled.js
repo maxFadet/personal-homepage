@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GithubIcon } from '../../../images/mark-github.svg';
+import { ReactComponent as GithubIcon } from '../../Footer/Github.svg';
 
 export const HeaderWrapper = styled.header`
   width: 195px;
@@ -17,6 +17,7 @@ export const HeaderWrapper = styled.header`
 
 export const GithubMark = styled(GithubIcon)`
   color: ${({ theme }) => theme.colors.blue};
+  width: 40px;
 
   @media (max-width: 480px) {
     width: 32px;

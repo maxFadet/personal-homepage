@@ -1,7 +1,7 @@
-import { ReactComponent as Facebook } from '../../images/Facebook.svg';
-import { ReactComponent as Github } from '../../images/Github.svg';
-import { ReactComponent as Instagram } from '../../images/Instagram.svg';
-import { ReactComponent as LinkedIN } from '../../images/LinkedIN.svg';
+import { ReactComponent as Facebook } from './Facebook.svg';
+import { ReactComponent as Github } from './Github.svg';
+import { ReactComponent as Instagram } from './Instagram.svg';
+import { ReactComponent as LinkedIN } from './LinkedIN.svg';
 
 export const socialIcons = [
   {

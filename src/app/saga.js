@@ -1,6 +1,6 @@
 import { all } from 'redux-saga/effects';
-import watchFetchData from './components/ProjectsSection/ProjectsSaga';
-import { themeSaga } from './components/Header/Switcher/themeSaga';
+import watchFetchData from '../features/Homepage/ProjectsSection/ProjectsSaga';
+import { themeSaga } from '../features/Homepage/Switcher/themeSaga';
 
 export default function* saga() {
     yield all([

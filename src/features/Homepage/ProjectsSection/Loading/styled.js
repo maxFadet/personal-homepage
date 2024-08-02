@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ReactComponent as Loader } from '../../../images/Loader.svg';
+import { ReactComponent as Loader } from './Loader.svg';
 
 export const Wrapper = styled.div`
    text-align: center;

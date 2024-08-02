@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Danger } from '../../../images/Danger.svg';
+import { ReactComponent as Danger } from './Danger.svg';
 
 export const Wrapper = styled.div`
    text-align: center;

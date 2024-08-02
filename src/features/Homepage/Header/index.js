@@ -1,7 +1,7 @@
 import { Caption, Content, Article, Image, Name, Text, ButtonIcon } from "./styled";
-import { BaseButton } from "../Button";
-import personalPhoto from '../../images/personal-photo.jpg';
-import { Switcher } from "./Switcher";
+import { BaseButton } from "../../../components/Button";
+import personalPhoto from '../../../components/Resources/personal-photo.jpg';
+import { Switcher } from "../Switcher";
 
 const Header = () => (
     <Article>

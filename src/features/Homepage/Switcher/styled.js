@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Switcher } from '../../../images/Switcher.svg';
+import { ReactComponent as Switcher } from './Switcher.svg';
 
 export const Wrapper = styled.div`
   max-width: 159px;
