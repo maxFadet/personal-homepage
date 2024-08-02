@@ -1,4 +1,7 @@
-export const currentSkills = [
+import { socialIconsData } from './Icons/socialIconsData';
+
+export const resources = {
+  currentSkills: [
     "Semantic & accessible HTML",
     "Responsive Web Design",
     "Teamwork",
@@ -21,13 +24,17 @@ export const currentSkills = [
     "NPM",
     "React",
     "Git",
-];
-
-export const futureSkills = [
-    "React ContextL",
+  ],
+  futureSkills: [
+    "React Context",
     "Node.js",
     "Cypress",
     "Unit testing",
     "TypeScript",
     "JS classes",
-];
+  ],
+  name: "Maksim Padrabinkin",
+  email: "maxfadet@gmail.com",
+  githubAPI: "https://api.github.com/users/maxFadet/repos",
+  socialIcons: socialIconsData,
+};
