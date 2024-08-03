@@ -20,7 +20,7 @@ export const Text = styled.span`
   text-transform: uppercase;
   letter-spacing: 0;
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     display: none;
   }
 `;

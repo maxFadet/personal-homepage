@@ -6,11 +6,11 @@ export const Container = styled.div`
   width: 90%;
   letter-spacing: 0.05em;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     margin: 75px auto 71px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     margin: 31px auto 34px;
   }
 `;

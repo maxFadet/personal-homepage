@@ -5,11 +5,11 @@ export const Wrapper = styled.div`
    text-align: center;
    margin: 88px 0 140px;
 
-   @media (max-width: 1200px) {
+   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     margin: 56px 0 94px;
   }
 
-   @media (max-width: 480px) {
+   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     margin: 24px 0 48px;
   }
 `;
@@ -36,12 +36,12 @@ export const LoadingIcon = styled(Loader)`
     transform-origin: center;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     width: 130px;
     margin-top: 36px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 100px;
     margin-top: 24px;
   }

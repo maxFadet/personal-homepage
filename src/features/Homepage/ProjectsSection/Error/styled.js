@@ -5,17 +5,17 @@ export const Wrapper = styled.div`
    text-align: center;
    margin: 88px 0 140px;
 
-   @media (max-width: 1200px) {
+   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     margin: 60px auto 100px;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     margin: 38px auto 70px;
   }
 `;
 
 export const ErrorIcon = styled(Danger)`
-  @media(max-width: 480px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 32px;
   }
 `;
@@ -26,11 +26,11 @@ export const Title = styled.h3`
   line-height: 29px;
   margin: 23px 0 32px;
   
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     margin: 17px 0 24px;
   }
 
-  @media(max-width: 480px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.phone}) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -42,11 +42,11 @@ export const Paragraph = styled.p`
   line-height: 28px;
   margin-bottom: 32px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 24px;
   }
 
-  @media(max-width: 480px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.phone}) {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 24px;

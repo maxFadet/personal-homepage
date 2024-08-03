@@ -9,12 +9,12 @@ export const Container = styled.article`
   padding: 32px;
   border-radius: 4px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding: 24px;
     margin: 60px auto 0;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     padding: 16px;
     margin: 48px auto 0;
   }
@@ -22,19 +22,19 @@ export const Container = styled.article`
 
 export const Header = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
-  font-size: 30px;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight: 900;
   line-height: 36px;
   margin: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 29px;
-    font-size: 24px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.medium.tablet};
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 22px;
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
   }
 `;
 
@@ -49,11 +49,11 @@ export const List = styled.ul`
   justify-content: space-between;
   margin-bottom: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding-top: 24px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     padding-top: 16px;
   }
 `;
@@ -71,7 +71,7 @@ export const Item = styled.li`
     font-size: 30px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     ::before {
       font-size: 20px;
       padding-left: 0;
@@ -85,7 +85,7 @@ export const Text = styled.span`
   font-weight: 400;
   line-height: 25px;
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
     font-size: 14px;
     margin: -10px;

@@ -10,11 +10,11 @@ export const Content = styled.div`
   gap: 24px;
   align-items: flex-start; 
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     gap: 18px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     gap: 12px;
   }
 `;
@@ -28,7 +28,7 @@ export const Caption = styled.div`
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
-  font-size: 32px;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.large.default};
   font-weight: 900;
   line-height: 38.73px;
   text-decoration: none;
@@ -38,8 +38,8 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.colors.blue};
   }
 
-  @media (max-width: 768px) {
-    font-size: 18px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes.headlines.large.mobile};
     line-height: 21.78px;
   }
 `;
@@ -51,12 +51,12 @@ export const Text = styled.p`
   line-height: 25px;
   margin: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 21px;
     font-size: 16px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
     font-size: 14px;
   }
@@ -68,12 +68,12 @@ export const Icons = styled.div`
   gap: 24px;
   padding-top: 24px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding-top: 20px;
     gap: 20px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     padding-top: 12px;
     gap: 16px;
   }
@@ -88,12 +88,12 @@ export const LinkSocialMedia = styled.a`
   }
 
   svg {
-    @media (max-width: 1200px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     width: 40px;
     height: 40px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 32px;
     height: 232x;
     }

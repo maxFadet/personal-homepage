@@ -6,11 +6,11 @@ export const HeaderWrapper = styled.header`
   margin: 72px auto 0;
   text-align: center;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     margin: 60px auto 0;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     margin: 48px auto 0;
   }
 `;
@@ -19,27 +19,27 @@ export const GithubMark = styled(GithubIcon)`
   color: ${({ theme }) => theme.colors.blue};
   width: 40px;
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 32px;
   }
 `;
 
 export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
-  font-size: 30px;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight: 900;
   line-height: 36px;
   text-align: center;
   margin: 12px 0 8px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 29px;
-    font-size: 24px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.medium.tablet};
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 22px;
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
   }
 `;
 
@@ -49,11 +49,11 @@ export const SubTitle = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.colors.textSecondaryColor};
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 26px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 24px;
     font-size: 17px;
   }

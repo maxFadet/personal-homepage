@@ -6,11 +6,11 @@ export const Grid = styled.div`
   gap: 32px;
   margin: 24px 0 120px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     gap: 16px;
     margin-bottom: 48px;
   }
@@ -33,11 +33,11 @@ export const Tile = styled.div`
     border: 6px solid ${({ theme }) => theme.colors.borderHover};
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding: 40px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     padding: 24px;
     gap: 16px;
   }
@@ -45,19 +45,19 @@ export const Tile = styled.div`
 
 export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.blue};
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
   font-weight: 700;
   margin: 0;
   line-height: 29px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 25px;
-    font-size: 20px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.small.tablet};
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 20px;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.small.mobile};
   }
 `;
 
@@ -66,12 +66,12 @@ const TextBase = styled.p`
   line-height: 25px;
   margin: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 21px;
     font-size: 16px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
     font-size: 14px;
   }

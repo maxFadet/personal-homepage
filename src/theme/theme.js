@@ -1,14 +1,54 @@
 const common = {
     breakpoints: {
-        laptop: 1200,
-        tablet: 768,
-        phone: 480,
+        laptop: "1200px",
+        tablet: "768px",
+        phone: "425px",
     },
     fontSizes: {
-        large: "30px",
-        medium: "20px",
-        small: "18px",
-        xSmall: "12px",
+        headlines: {
+            xlarge: {
+                default: "38px",
+                mobile: "22px",
+                tablet: "30px",
+            },
+            large: {
+                default: "32px",
+                mobile: "18px",
+                tablet: "28px",
+            },
+            medium: {
+                default: "30px",
+                mobile: "18px",
+                tablet: "24px",
+            },
+            small: {
+                default: "24px",
+                mobile: "16px",
+                tablet: "20px",
+            },
+        },
+        paragraph: {
+            large: {
+                default: "20px",
+                mobile: "16px",
+                tablet: "18px",
+            },
+            medium: {
+                default: "18px",
+                mobile: "14px",
+                tablet: "16px",
+            },
+            small: {
+                default: "16px",
+                mobile: "12px",
+                tablet: "14px",
+            },
+            xSmall: {
+                default: "12px",
+                mobile: "10px",
+                tablet: "12px",
+            },
+        },
     },
     fontWeights: {
         normal: 400,

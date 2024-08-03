@@ -9,7 +9,7 @@ export const Article = styled.article`
   align-items: center;
   grid-template-columns: 1fr auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -22,12 +22,12 @@ export const Image = styled.img`
   object-fit: cover;
   flex-shrink: 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     width: 256px;
     height: 256px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 128px;
     height: 128px;
   }
@@ -50,19 +50,19 @@ export const Caption = styled.div`
 
 export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
-  font-size: 38px;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.default};
   font-weight: 900;
   line-height: 46px;
   margin: 12px 0 0 0;
 
-  @media (max-width: 1200px) {
-    font-size: 30px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.tablet};
     line-height: 36px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 27px;
-    font-size: 22px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.mobile};
     margin: 8px 0 0 0;
   }
 `;
@@ -73,12 +73,12 @@ export const Text = styled.p`
   line-height: 28px;
   margin: 32px 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 26px;
     margin: 28px 0;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 24px;
     font-size: 17px;
     margin: 16px 0 24px 0;
@@ -86,7 +86,7 @@ export const Text = styled.p`
 `;
 
 export const ButtonIcon = styled(Message)`
- @media (max-width: 480px) {
+ @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 20px;
     height: 18px;
   }
