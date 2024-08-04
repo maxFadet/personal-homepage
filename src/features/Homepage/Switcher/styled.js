@@ -13,10 +13,10 @@ export const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-export const Text = styled.span`
-  line-height: 15.6px;
-  font-weight: 700;
-  font-size: 12px;
+export const Caption = styled.span`
+  line-height: 15px;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  font-size:  ${({ theme }) => theme.fontSizes.paragraph.small.default};
   text-transform: uppercase;
   letter-spacing: 0;
 
@@ -31,7 +31,7 @@ export const Button = styled.button`
   padding: 3px;
   width: 48px;
   height: 24px;
-  cursor: pointer;
+  cursor: ${({ theme }) => theme.cursor.pointer};
   border-radius: 50px;
   border: 1px solid ${({ theme }) => theme.colors.textDominantColor};
   background-color: ${({ theme }) => theme.colors.backgroundSwitcher};

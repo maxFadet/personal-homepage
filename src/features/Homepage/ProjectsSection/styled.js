@@ -46,7 +46,7 @@ export const Tile = styled.div`
 export const Title = styled.h3`
   color: ${({ theme }) => theme.colors.blue};
   font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
-  font-weight: 700;
+  font-weight:  ${({ theme }) => theme.fontWeights.bold};
   margin: 0;
   line-height: 29px;
 
@@ -62,18 +62,18 @@ export const Title = styled.h3`
 `;
 
 const TextBase = styled.p`
-  font-size: 18px;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   line-height: 25px;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 21px;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
-    font-size: 14px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
 `;
 
@@ -83,22 +83,24 @@ export const Description = styled(TextBase)`
 
 export const Link = styled(TextBase).attrs({ as: 'a' })`
   color: ${({ theme }) => theme.colors.blue};
-  text-decoration-color: rgb(3 102 214 / 20%);
+  text-decoration-color: rgba(3, 102, 214, 0.2);
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
-  transition: color 0.3s ease 0s, 
-  text-decoration-color 0.3s ease 0s, 
-  font-weight 0.3s ease 0s;
-  cursor: default;
+  transition: 
+    color 0.3s ease,
+    text-decoration-color 0.3s ease,
+    transform 0.3s ease;
+  cursor: ${({ theme }) => theme.cursor.default};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
   &:hover {
     text-decoration-color: ${({ theme }) => theme.colors.blue};
-    font-weight: 450;
-    }
+    transform: scale(1.01);
+  }
 `;
+
 
 export const Links = styled.div`
   display: grid;

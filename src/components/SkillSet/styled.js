@@ -23,7 +23,7 @@ export const Container = styled.article`
 export const Header = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
-  font-weight: 900;
+  font-weight:  ${({ theme }) => theme.fontWeights.heavy};
   line-height: 36px;
   margin: 0;
 
@@ -81,13 +81,13 @@ export const Item = styled.li`
 
 export const Text = styled.span`
   color: ${({ theme }) => theme.colors.textDominantColor};
-  font-size: 18px;
-  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
+  font-weight: ${({ theme }) => theme.fontWeights.normal};
   line-height: 25px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
-    font-size: 14px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
     margin: -10px;
   }
 `;

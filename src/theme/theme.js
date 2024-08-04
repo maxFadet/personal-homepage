@@ -30,8 +30,7 @@ const common = {
         paragraph: {
             large: {
                 default: "20px",
-                mobile: "16px",
-                tablet: "18px",
+                mobile: "17px",
             },
             medium: {
                 default: "18px",
@@ -39,19 +38,11 @@ const common = {
                 tablet: "16px",
             },
             small: {
-                default: "16px",
-                mobile: "12px",
-                tablet: "14px",
-            },
-            xSmall: {
                 default: "12px",
-                mobile: "10px",
-                tablet: "12px",
             },
         },
     },
     fontWeights: {
-        normal: 400,
         semiBold: 600,
         bold: 700,
         heavy: 900,
@@ -74,7 +65,11 @@ const common = {
     },
     shadows: {
         light: "rgba(9, 10, 51, 0.03) 0px 16px 58px, rgba(9, 10, 51, 0.02) 0px -2px 50px",
-    }
+    },
+    cursor: {
+        default: "default",
+        pointer: "pointer",
+    },
 };
 
 export const lightTheme = {

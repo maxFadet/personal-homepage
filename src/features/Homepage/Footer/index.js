@@ -5,7 +5,7 @@ import { resources } from '../../../components/Resources/resources';
 const Footer = () => (
   <Article>
     <Content>
-      <Caption>LET’S TALK!</Caption>
+      <Caption>let’s talk!</Caption>
       <Link href={`mailto:${resources.email}`} target="_blank" title="My email">
         {resources.email}
       </Link>

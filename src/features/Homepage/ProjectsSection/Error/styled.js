@@ -21,8 +21,8 @@ export const ErrorIcon = styled(Danger)`
 `;
 
 export const Title = styled.h3`
-  font-size: 24px;
-  font-weight: 700;
+  font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
+  font-weight:  ${({ theme }) => theme.fontWeights.bold};
   line-height: 29px;
   margin: 23px 0 32px;
   
@@ -31,14 +31,13 @@ export const Title = styled.h3`
   }
 
   @media(max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
     line-height: 24px;
   }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   line-height: 28px;
   margin-bottom: 32px;
 

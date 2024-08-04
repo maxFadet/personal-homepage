@@ -42,8 +42,8 @@ export const Content = styled.div`
 
 export const Caption = styled.div`
   line-height: 15px;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight:  ${({ theme }) => theme.fontWeights.bold};
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
   color: ${({ theme }) => theme.colors.textDominantColor};
 `;
@@ -51,7 +51,7 @@ export const Caption = styled.div`
 export const Name = styled.h1`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.default};
-  font-weight: 900;
+  font-weight:  ${({ theme }) => theme.fontWeights.heavy};
   line-height: 46px;
   margin: 12px 0 0 0;
 
@@ -68,8 +68,7 @@ export const Name = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: 20px;
-  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   line-height: 28px;
   margin: 32px 0;
 
@@ -80,7 +79,7 @@ export const Text = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 24px;
-    font-size: 17px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.large.mobile};
     margin: 16px 0 24px 0;
   }
 `;

@@ -4,8 +4,8 @@ export const BaseButton = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   gap: 16px;
   padding: 12px 16px;
   border-radius: 4px;
@@ -27,7 +27,7 @@ export const BaseButton = styled.a`
   }
   
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
     gap: 12px;
   }
 `;

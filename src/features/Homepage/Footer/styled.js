@@ -19,17 +19,18 @@ export const Content = styled.div`
   }
 `;
 
-export const Caption = styled.div`
+export const Caption = styled.p`
   line-height: 15px;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight:  ${({ theme }) => theme.fontWeights.bold};
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
+  text-transform: uppercase;
 `;
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.large.default};
-  font-weight: 900;
+  font-weight:  ${({ theme }) => theme.fontWeights.heavy};
   line-height: 38.73px;
   text-decoration: none;
   transition: color 0.3s ease 0s;
@@ -40,25 +41,24 @@ export const Link = styled.a`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.headlines.large.mobile};
-    line-height: 21.78px;
+    line-height: 22px;
   }
 `;
 
 export const Text = styled.p`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
-  font-size: 18px;
-  font-weight: 400;
+  font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   line-height: 25px;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 21px;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     line-height: 17px;
-    font-size: 14px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
 `;
 
