@@ -13,12 +13,13 @@ export const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-export const Caption = styled.span`
+export const Caption = styled.p`
   line-height: 15px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size:  ${({ theme }) => theme.fontSizes.paragraph.small.default};
   text-transform: uppercase;
   letter-spacing: 0;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     display: none;

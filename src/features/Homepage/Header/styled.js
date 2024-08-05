@@ -40,7 +40,7 @@ export const Content = styled.div`
   align-items: flex-start;
 `;
 
-export const Caption = styled.div`
+export const Caption = styled.p`
   line-height: 15px;
   font-weight:  ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
@@ -53,7 +53,7 @@ export const Name = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.default};
   font-weight:  ${({ theme }) => theme.fontWeights.heavy};
   line-height: 46px;
-  margin: 12px 0 0 0;
+  margin: 5px 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.tablet};

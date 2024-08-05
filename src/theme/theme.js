@@ -1,3 +1,23 @@
+const colors = {
+    alabaster: "#FBFBFB",
+    white: "FFFFFF",
+    mercury: "E5E5E5",
+    staleGray: "6E7E91",
+    mineShaft: "252525",
+    mineShaft: "363636B8",
+    iron10: "D1D5DA1A",
+    iron30: "#D1D5DA4D",
+    scienceBlue: "#0366D6",
+    scienceBlue20: "0366D633",
+    scienceBlue50: "#0366D680",
+    anakiwa: "8CC2FF",
+    parsley20: "14462033",
+    violet3: "090A3308",
+    doveGray: "6E6E6E",
+    shipCove: "6D93BE",
+    dodgerBlue: "2188FF",
+}
+
 const common = {
     breakpoints: {
         laptop: "1200px",
@@ -46,22 +66,6 @@ const common = {
         semiBold: 600,
         bold: 700,
         heavy: 900,
-    },
-    lineHeights: {
-        large: "36px",
-        medium: "28px",
-        small: "25px",
-    },
-    spacing: {
-        xLarge: "72px",
-        large: "56px",
-        medium: "24px",
-        small: "16px",
-        xSmall: "12px",
-    },
-    borderRadius: {
-        small: "4px",
-        large: "50%",
     },
     shadows: {
         light: "rgba(9, 10, 51, 0.03) 0px 16px 58px, rgba(9, 10, 51, 0.02) 0px -2px 50px",
