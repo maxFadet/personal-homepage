@@ -19,8 +19,8 @@ export const Grid = styled.div`
 export const Tile = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundTile};
   box-shadow: 
-  0px 16px 58px ${({ theme }) => theme.colors.tileShadow}, 
-  0px -2px 50px ${({ theme }) => theme.colors.tileShadow2};
+  0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 
+  0px -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.colors.border};

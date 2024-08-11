@@ -1,10 +1,10 @@
-const colors = {
+export const colors = {
     alabaster: "#FBFBFB",
     white: "FFFFFF",
     mercury: "E5E5E5",
     staleGray: "6E7E91",
     mineShaft: "252525",
-    mineShaft: "363636B8",
+    mineShaftLight: "363636B8",
     iron10: "D1D5DA1A",
     iron30: "#D1D5DA4D",
     scienceBlue: "#0366D6",
@@ -13,12 +13,13 @@ const colors = {
     anakiwa: "8CC2FF",
     parsley20: "14462033",
     violet3: "090A3308",
+    violet2: "090A3305",
     doveGray: "6E6E6E",
     shipCove: "6D93BE",
     dodgerBlue: "2188FF",
 }
 
-const common = {
+export const common = {
     breakpoints: {
         laptop: "1200px",
         tablet: "768px",
@@ -79,7 +80,7 @@ const common = {
 export const lightTheme = {
     ...common,
     colors: {
-        background: "#FBFBFB",
+        background: colors.alabaster,
         backgroundTile: "#FFFFFF",
         backgroundSwitcher: "#E5E5E5",
         textDominantColor: "#6E7E91",
@@ -92,13 +93,26 @@ export const lightTheme = {
         tileShadow: "#090A3308",
         tileShadow2: "#090A3305",
         blue: "#0366D6",
+        tile: {
+            shadow: colors.violet3,
+            shadow2: colors.violet2,
+            background: colors.white,
+            border: colors.iron30,
+            hover: colors.scienceBlue20
+        },
+        button: {
+            background: colors.scienceBlue,
+            outline: colors.anakiwa,
+            active: colors.parsley20,
+            text: colors.white
+        },
     }
 };
 
 export const darkTheme = {
     ...common,
     colors: {
-        background: "#252525",
+        background: colors.mineShaft,
         backgroundTile: "#363636B8",
         backgroundSwitcher: "#6E6E6E",
         textDominantColor: "#FFFFFF",
