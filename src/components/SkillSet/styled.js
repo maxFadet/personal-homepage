@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  background-color: ${({ theme }) => theme.colors.backgroundTile};
+  background-color: ${({ theme }) => theme.colors.tile.background};
   margin: 72px auto;
   box-shadow: 
-    rgba(9, 10, 51, 0.03) 0px 16px 58px, 
-    rgba(9, 10, 51, 0.02) 0px -2px 50px;
+  ${({ theme }) => theme.colors.tile.shadow} 0px 16px 58px, 
+  ${({ theme }) => theme.colors.tile.shadow} 0px -2px 50px;
   padding: 32px;
   border-radius: 4px;
 
@@ -80,7 +80,7 @@ export const Item = styled.li`
 `;
 
 export const Text = styled.span`
-  color: ${({ theme }) => theme.colors.textDominantColor};
+  color: ${({ theme }) => theme.colors.text};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   font-weight: ${({ theme }) => theme.fontWeights.normal};
   line-height: 25px;

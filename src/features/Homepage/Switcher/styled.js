@@ -34,7 +34,7 @@ export const Button = styled.button`
   height: 24px;
   cursor: ${({ theme }) => theme.cursor.pointer};
   border-radius: 50px;
-  border: 1px solid ${({ theme }) => theme.colors.textDominantColor};
+  border: 1px solid ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.backgroundSwitcher};
   position: relative;
 `;
@@ -43,7 +43,7 @@ export const Icon = styled(Switcher)`
 `;
 
 export const IconWrapper = styled.div`
-  background: ${({ theme }) => theme.colors.textDominantColor};
+  background: ${({ theme }) => theme.colors.text};
   color: ${({ theme }) => theme.colors.background};
   border-radius: 50%;
   width: 20px;

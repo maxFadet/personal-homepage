@@ -1,25 +1,24 @@
-export const colors = {
+export const palette = {
     alabaster: "#FBFBFB",
-    white: "FFFFFF",
-    mercury: "E5E5E5",
-    staleGray: "6E7E91",
-    mineShaft: "252525",
-    mineShaftLight: "363636B8",
-    iron10: "D1D5DA1A",
+    white: "#FFFFFF",
+    mercury: "#E5E5E5",
+    staleGray: "#6E7E91",
+    mineShaft: "#252525",
+    mineShaftLight: "#363636B8",
+    iron10: "#D1D5DA1A",
     iron30: "#D1D5DA4D",
     scienceBlue: "#0366D6",
-    scienceBlue20: "0366D633",
+    scienceBlue20: "#0366D633",
     scienceBlue50: "#0366D680",
-    anakiwa: "8CC2FF",
-    parsley20: "14462033",
-    violet3: "090A3308",
-    violet2: "090A3305",
-    doveGray: "6E6E6E",
-    shipCove: "6D93BE",
-    dodgerBlue: "2188FF",
+    anakiwa: "#8CC2FF",
+    parsley20: "#14462033",
+    violet: "#090A3308",
+    doveGray: "#6E6E6E",
+    shipCove: "#6D93BE",
+    dodgerBlue: "#2188FF",
 }
 
-export const common = {
+export const sharedStyles = {
     breakpoints: {
         laptop: "1200px",
         tablet: "768px",
@@ -78,52 +77,45 @@ export const common = {
 };
 
 export const lightTheme = {
-    ...common,
+    ...sharedStyles,
     colors: {
-        background: colors.alabaster,
-        backgroundTile: "#FFFFFF",
-        backgroundSwitcher: "#E5E5E5",
-        textDominantColor: "#6E7E91",
-        textSecondaryColor: "#252525",
-        border: "#D1D5DA4D",
-        borderHover: "#0366D633",
-        buttonText: "#FFFFFF",
-        buttonShadow: "#8CC2FF",
-        buttonActive: "#14462033",
-        tileShadow: "#090A3308",
-        tileShadow2: "#090A3305",
-        blue: "#0366D6",
+        background: palette.alabaster,
+        backgroundSwitcher: palette.mercury,
+        textSecondaryColor: palette.mineShaft,
+        text: palette.staleGray,
+        blue: palette.scienceBlue,
         tile: {
-            shadow: colors.violet3,
-            shadow2: colors.violet2,
-            background: colors.white,
-            border: colors.iron30,
-            hover: colors.scienceBlue20
+            shadow: palette.violet,
+            background: palette.white,
+            border: palette.iron30,
+            hover: palette.scienceBlue20
         },
         button: {
-            background: colors.scienceBlue,
-            outline: colors.anakiwa,
-            active: colors.parsley20,
-            text: colors.white
+            outline: palette.anakiwa,
+            active: palette.parsley20,
+            text: palette.white
         },
     }
 };
 
 export const darkTheme = {
-    ...common,
+    ...sharedStyles,
     colors: {
-        background: colors.mineShaft,
-        backgroundTile: "#363636B8",
-        backgroundSwitcher: "#6E6E6E",
-        textDominantColor: "#FFFFFF",
-        textSecondaryColor: "#FFFFFF",
-        border: "#D1D5DA1A",
-        borderHover: "#0366D680",
-        buttonText: "#FFFFFF",
-        buttonShadow: "#6D93BE",
-        buttonActive: "#14462033",
-        tileShadow: "#090A3308",
-        tileShadow2: "#090A3305",
-        blue: "#2188FF",
+        background: palette.mineShaft,
+        backgroundSwitcher: palette.doveGray,
+        textSecondaryColor: palette.white,
+        text: palette.white,
+        blue: palette.dodgerBlue,
+        tile: {
+            shadow: palette.violet,
+            background: palette.mineShaftLight,
+            border: palette.iron10,
+            hover: palette.scienceBlue50
+        },
+        button: {
+            outline: palette.shipCove,
+            active: palette.parsley20,
+            text: palette.white
+        },
     }
 };

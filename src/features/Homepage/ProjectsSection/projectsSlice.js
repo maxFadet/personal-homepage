@@ -7,6 +7,7 @@ const projectsSlice = createSlice({
     isLoading: false,
     isError: false,
   },
+  
   reducers: {
     fetchDataRequest: (state) => {
       state.isLoading = true;
@@ -30,4 +31,5 @@ export const {
   setLoading,
   setProjects
 } = projectsSlice.actions;
+
 export default projectsSlice.reducer;

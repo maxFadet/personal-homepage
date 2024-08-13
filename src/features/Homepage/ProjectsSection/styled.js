@@ -17,20 +17,20 @@ export const Grid = styled.div`
 `;
 
 export const Tile = styled.div`
-  background-color: ${({ theme }) => theme.colors.backgroundTile};
+  background-color: ${({ theme }) => theme.colors.tile.background};
   box-shadow: 
   0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 
-  0px -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
+  0px -2px 50px ${({ theme }) => theme.colors.tile.shadow};
   padding: 56px;
   border-radius: 4px;
-  border: 6px solid ${({ theme }) => theme.colors.border};
+  border: 6px solid ${({ theme }) => theme.colors.tile.border};
   transition: border 0.3s ease 0s;;
   display: flex;
   flex-direction: column;
   gap: 24px;
   
   &:hover {
-    border: 6px solid ${({ theme }) => theme.colors.borderHover};
+    border: 6px solid ${({ theme }) => theme.colors.tile.hover};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
@@ -78,7 +78,6 @@ const TextBase = styled.p`
 `;
 
 export const Description = styled(TextBase)`
-  color: ${({ theme }) => theme.colors.textDominantColor};
 `;
 
 export const Link = styled(TextBase).attrs({ as: 'a' })`
@@ -100,7 +99,6 @@ export const Link = styled(TextBase).attrs({ as: 'a' })`
     transform: scale(1.01);
   }
 `;
-
 
 export const Links = styled.div`
   display: grid;

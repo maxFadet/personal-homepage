@@ -10,7 +10,7 @@ export const BaseButton = styled.a`
   padding: 12px 16px;
   border-radius: 4px;
   background: ${({ theme }) => theme.colors.blue};
-  color: ${({ theme }) => theme.colors.buttonText};
+  color: ${({ theme }) => theme.colors.button.text};
   border: 1px solid rgba(209, 213, 218, 0.3);
   outline: transparent solid 3px;
   text-decoration: none;
@@ -18,11 +18,11 @@ export const BaseButton = styled.a`
   white-space: nowrap;
 
   &:hover {
-    outline: 3px solid ${({ theme }) => theme.colors.buttonShadow};
+    outline: 3px solid ${({ theme }) => theme.colors.button.outline};
   }
 
   &:active {
-    box-shadow: 0 2px ${({ theme }) => theme.colors.buttonActive} inset;
+    box-shadow: 0 2px ${({ theme }) => theme.colors.button.active} inset;
     outline: none;
   }
   

@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: "Inter", sans-serif;
         background-color: ${({ theme }) => theme.colors.background};
-        color: ${({ theme }) => theme.colors.textDominantColor};
+        color: ${({ theme }) => theme.colors.text};
         word-break: break-word;
     }
 `;
