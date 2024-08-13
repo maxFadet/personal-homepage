@@ -25,6 +25,7 @@ export const Caption = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
   text-transform: uppercase;
+  margin: 0;
 `;
 
 export const Link = styled.a`
