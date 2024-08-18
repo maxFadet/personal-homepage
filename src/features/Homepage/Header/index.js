@@ -11,7 +11,7 @@ const Header = () => (
         <Content>
             <Caption>THIS IS</Caption>
             <Name>{`${resources.name}`}</Name>
-            <Text>👨🏻‍💻  I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.</Text>
+            <Text>👨🏻‍💻  I'm a dedicated Frontend Developer with a passion for React, actively seeking new job opportunities.</Text>
             <BaseButton href={`mailto:${resources.email}`} target="_blank" title="My email">
                 <ButtonIcon />
                 Hire Me
