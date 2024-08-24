@@ -9,7 +9,7 @@ const Header = () => (
         <Switcher />
         <Image src={personalPhoto} alt="Maksim Padrabinkin" />
         <Content>
-            <Caption>THIS IS</Caption>
+            <Caption>this is</Caption>
             <Name>{`${resources.name}`}</Name>
             <Text>👨🏻‍💻  I'm a dedicated Frontend Developer with a passion for React, actively seeking new job opportunities.</Text>
             <BaseButton href={`mailto:${resources.email}`} target="_blank" title="My email">

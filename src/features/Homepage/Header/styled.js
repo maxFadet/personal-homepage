@@ -45,6 +45,7 @@ export const Caption = styled.p`
   font-weight:  ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
+  text-transform: uppercase;
 `;
 
 export const Name = styled.h1`
