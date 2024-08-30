@@ -7,7 +7,7 @@ const projectsSlice = createSlice({
     isLoading: false,
     isError: false,
   },
-  
+
   reducers: {
     fetchDataRequest: (state) => {
       state.isLoading = true;
