@@ -1,9 +1,9 @@
 import { call, put, delay, takeLatest } from 'redux-saga/effects';
 import axios from 'axios';
-import { fetchDataRequest, setProjects, setLoading, setError } from './projectsSlice';
+import { fetchProjects, setProjects, setLoading, setError } from './projectsSlice';
 import { resources } from '../../../components/Resources/resources';
 
-function* fetchDataSaga() {
+function* fetchProjectsSaga() {
   try {
     yield put(setLoading(true));
     yield put(setError(false));
@@ -17,6 +17,6 @@ function* fetchDataSaga() {
   }
 }
 
-export default function* watchFetchData() {
-  yield takeLatest(fetchDataRequest.type, fetchDataSaga);
+export default function* watchFetchProjects() {
+  yield takeLatest(fetchProjects.type, fetchProjectsSaga);
 }

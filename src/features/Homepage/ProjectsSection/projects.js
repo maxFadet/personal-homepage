@@ -3,50 +3,50 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 import {
-    Grid,
-    Tile,
-    Title,
-    Description,
-    Links,
-    Link,
+    ProjectGrid,
+    ProjectTile,
+    ProjectTitle,
+    ProjectDescription,
+    ProjectLinks,
+    ProjectLink,
 } from "./styled";
-import { fetchDataRequest } from './projectsSlice';
-import { Head } from "./Head";
+import { fetchProjects } from './projectsSlice';
+import Header from "./Header";
 
 const ProjectsSection = () => {
     const dispatch = useDispatch();
-    const { data: projects, isLoading, isError } = useSelector(state => state.projects);
+    const { projects, isLoading, isError } = useSelector(state => state.projects);
 
     useEffect(() => {
-        dispatch(fetchDataRequest());
+        dispatch(fetchProjects());
     }, [dispatch]);
 
     return (
         <>
-            <Head />
+            <Header />
             {isLoading && <Loading />}
             {isError && <Error />}
             {!isLoading && !isError && (
-                <Grid>
+                <ProjectGrid>
                     {projects
                         .filter(project => project.description)
                         .map(project => (
-                            <Tile key={project.id}>
-                                <Title>{project.name}</Title>
-                                <Description>{project.description}</Description>
-                                <Links>
-                                    <Description>Demo: </Description>
-                                    <Link href={project.homepage} target="_blank" rel="noopener noreferrer">
+                            <ProjectTile key={project.id}>
+                                <ProjectTitle>{project.name}</ProjectTitle>
+                                <ProjectDescription>{project.description}</ProjectDescription>
+                                <ProjectLinks>
+                                    <ProjectDescription>Demo: </ProjectDescription>
+                                    <ProjectLink href={project.homepage} target="_blank" rel="noopener noreferrer">
                                         {project.homepage}
-                                    </Link>
-                                    <Description>Code: </Description>
-                                    <Link href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                    </ProjectLink>
+                                    <ProjectDescription>Code: </ProjectDescription>
+                                    <ProjectLink href={project.html_url} target="_blank" rel="noopener noreferrer">
                                         {project.html_url}
-                                    </Link>
-                                </Links>
-                            </Tile>
+                                    </ProjectLink>
+                                </ProjectLinks>
+                            </ProjectTile>
                         ))}
-                </Grid>
+                </ProjectGrid>
             )}
         </>
     );

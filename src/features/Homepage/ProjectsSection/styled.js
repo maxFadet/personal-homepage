@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -16,19 +16,19 @@ export const Grid = styled.div`
   }
 `;
 
-export const Tile = styled.div`
+export const ProjectTile = styled.div`
   background-color: ${({ theme }) => theme.colors.tile.background};
   box-shadow: 
-  0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 
-  0px -2px 50px ${({ theme }) => theme.colors.tile.shadow};
+    0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 
+    0px -2px 50px ${({ theme }) => theme.colors.tile.shadow};
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
-  transition: border 0.3s ease 0s;;
+  transition: border 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  
+
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.tile.hover};
   }
@@ -43,10 +43,10 @@ export const Tile = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const ProjectTitle = styled.h3`
   color: ${({ theme }) => theme.colors.blue};
   font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
-  font-weight:  ${({ theme }) => theme.fontWeights.bold};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin: 0;
   line-height: 29px;
 
@@ -77,10 +77,9 @@ const TextBase = styled.p`
   }
 `;
 
-export const Description = styled(TextBase)`
-`;
+export const ProjectDescription = styled(TextBase)``;
 
-export const Link = styled(TextBase).attrs({ as: 'a' })`
+export const ProjectLink = styled(TextBase).attrs({ as: 'a' })`
   color: ${({ theme }) => theme.colors.blue};
   text-decoration-color: rgba(3, 102, 214, 0.2);
   text-underline-offset: 5px;
@@ -100,7 +99,7 @@ export const Link = styled(TextBase).attrs({ as: 'a' })`
   }
 `;
 
-export const Links = styled.div`
+export const ProjectLinks = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 8px;

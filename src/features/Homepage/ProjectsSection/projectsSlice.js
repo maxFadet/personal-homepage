@@ -3,18 +3,18 @@ import { createSlice } from '@reduxjs/toolkit';
 const projectsSlice = createSlice({
   name: 'projects',
   initialState: {
-    data: [],
+    projects: [],
     isLoading: false,
     isError: false,
   },
 
   reducers: {
-    fetchDataRequest: (state) => {
+    fetchProjects: (state) => {
       state.isLoading = true;
       state.isError = false;
     },
     setProjects: (state, action) => {
-      state.data = action.payload;
+      state.projects = action.payload;
     },
     setLoading: (state, { payload: isLoading }) => {
       state.isLoading = isLoading;
@@ -26,7 +26,7 @@ const projectsSlice = createSlice({
 });
 
 export const {
-  fetchDataRequest,
+  fetchProjects,
   setError,
   setLoading,
   setProjects

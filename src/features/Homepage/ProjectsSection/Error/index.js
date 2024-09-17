@@ -1,20 +1,18 @@
-import { ErrorIcon, Paragraph, Title, Wrapper } from "./styled";
-import { BaseButton } from "../../../../components/Button"
+import { ErrorIcon, ErrorTitle, ErrorParagraph, ErrorWrapper } from "./styled";
+import { BaseButton } from "../../../../components/Button";
 
 export const Error = () => {
     return (
-        <Wrapper>
+        <ErrorWrapper>
             <ErrorIcon />
-            <Title>
-                Ooops! Something went wrong...
-            </Title>
-            <Paragraph>
+            <ErrorTitle>Oops! Something went wrong...</ErrorTitle>
+            <ErrorParagraph>
                 Sorry, failed to load Github projects. <br />
                 You can check them directly on Github.
-            </Paragraph>
-            <BaseButton href="https://github.com/maxFadet" target="_blank" title="My Github">
+            </ErrorParagraph>
+            <BaseButton href="https://github.com/maxFadet" target="_blank" title="My GitHub">
                 Go to Github
             </BaseButton>
-        </Wrapper>
+        </ErrorWrapper>
     );
 };

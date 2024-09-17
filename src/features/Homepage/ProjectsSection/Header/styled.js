@@ -24,10 +24,10 @@ export const GithubMark = styled(GithubIcon)`
   }
 `;
 
-export const Title = styled.h2`
+export const HeaderTitle = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
-  font-weight:  ${({ theme }) => theme.fontWeights.heavy};
+  font-weight: ${({ theme }) => theme.fontWeights.heavy};
   line-height: 36px;
   text-align: center;
   margin: 12px 0 8px;
@@ -43,7 +43,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const SubTitle = styled.p`
+export const HeaderSubtitle = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   margin: 0;
   color: ${({ theme }) => theme.colors.textSecondaryColor};
