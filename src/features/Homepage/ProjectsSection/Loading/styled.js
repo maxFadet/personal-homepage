@@ -18,6 +18,7 @@ export const Text = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   line-height: 28px;
   margin: 0;
+  color: ${({ theme }) => theme.colors.textSecondaryColor};;
 `;
 
 const rotate = keyframes`
