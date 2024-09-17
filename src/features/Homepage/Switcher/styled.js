@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Switcher } from './Switcher.svg';
 
-export const Wrapper = styled.div`
+export const SwitcherWrapper = styled.div`
   max-width: 159px;
   display: flex;
   flex-direction: row;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   white-space: nowrap;
 `;
 
-export const Caption = styled.p`
+export const SwitcherCaption = styled.p`
   line-height: 15px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size:  ${({ theme }) => theme.fontSizes.paragraph.small.default};
@@ -26,7 +26,7 @@ export const Caption = styled.p`
   }
 `;
 
-export const Button = styled.button`
+export const SwitcherButton = styled.button`
   display: flex;
   align-items: center;
   padding: 3px;
@@ -39,10 +39,10 @@ export const Button = styled.button`
   position: relative;
 `;
 
-export const Icon = styled(Switcher)`
+export const SwitcherIcon = styled(Switcher)`
 `;
 
-export const IconWrapper = styled.div`
+export const SwitcherIconWrapper = styled.div`
   background: ${({ theme }) => theme.colors.text};
   color: ${({ theme }) => theme.colors.background};
   border-radius: 50%;

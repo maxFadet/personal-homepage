@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as Message } from './Message.svg';
+import { ReactComponent as MessageIcon } from './Message.svg';
 
-export const Article = styled.article`
+export const HeaderArticle = styled.article`
   padding: 0;
   display: grid;
   position: relative;
@@ -15,7 +15,7 @@ export const Article = styled.article`
   }
 `;
 
-export const Image = styled.img`
+export const ProfileImage = styled.img`
   width: 384px;
   height: 384px;
   border-radius: 50%;
@@ -33,14 +33,14 @@ export const Image = styled.img`
   }
 `;
 
-export const Content = styled.div`
+export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
   align-items: flex-start;
 `;
 
-export const Caption = styled.p`
+export const HeaderCaption = styled.p`
   line-height: 15px;
   font-weight:  ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
@@ -48,7 +48,7 @@ export const Caption = styled.p`
   text-transform: uppercase;
 `;
 
-export const Name = styled.h1`
+export const DeveloperName = styled.h1`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.xlarge.default};
   font-weight:  ${({ theme }) => theme.fontWeights.heavy};
@@ -67,7 +67,7 @@ export const Name = styled.h1`
   }
 `;
 
-export const Text = styled.p`
+export const DeveloperText = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   line-height: 28px;
   margin: 32px 0;
@@ -84,7 +84,7 @@ export const Text = styled.p`
   }
 `;
 
-export const ButtonIcon = styled(Message)`
+export const EmailIconWrapper = styled(MessageIcon)`
  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     width: 20px;
     height: 18px;

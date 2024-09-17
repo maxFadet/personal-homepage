@@ -1,23 +1,33 @@
-import { Caption, Content, Article, Image, Name, Text, ButtonIcon } from "./styled";
+import { HeaderCaption, ContentWrapper, HeaderArticle, ProfileImage, DeveloperName, DeveloperText, EmailIconWrapper } from "./styled";
 import { BaseButton } from "../../../components/Button";
 import personalPhoto from '../../../components/Resources/personal-photo.jpg';
-import { Switcher } from "../Switcher";
+import { ThemeSwitcher } from "../Switcher";
 import { resources } from "../../../components/Resources/resources";
 
 const Header = () => (
-    <Article>
-        <Switcher />
-        <Image src={personalPhoto} alt="Maksim Padrabinkin" />
-        <Content>
-            <Caption>this is</Caption>
-            <Name>{`${resources.name}`}</Name>
-            <Text>👨🏻‍💻  I'm a dedicated Frontend Developer with a passion for React, actively seeking new job opportunities.</Text>
-            <BaseButton href={`mailto:${resources.email}`} target="_blank" title="My email">
-                <ButtonIcon />
+    <HeaderArticle>
+        <ThemeSwitcher />
+        <ProfileImage src={personalPhoto} alt="Maksim Padrabinkin" />
+        <ContentWrapper>
+            <HeaderCaption>
+                This is
+            </HeaderCaption>
+            <DeveloperName>
+                {`${resources.name}`}
+            </DeveloperName>
+            <DeveloperText>
+                👨🏻‍💻  I'm a dedicated Frontend Developer with a passion for React, actively seeking new job opportunities.
+            </DeveloperText>
+            <BaseButton
+                href={`mailto:${resources.email}`}
+                target="_blank"
+                title="My email"
+            >
+                <EmailIconWrapper />
                 Hire Me
             </BaseButton>
-        </Content>
-    </Article>
+        </ContentWrapper>
+    </HeaderArticle>
 );
 
 export default Header;
