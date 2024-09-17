@@ -1,27 +1,45 @@
-import React from 'react';
-import { Caption, Content, Article, Link, Text, Icons, LinkSocialMedia } from './styled';
-import { resources } from '../../../components/Resources/resources';
+import {
+  FooterHeading,
+  FooterContent,
+  Article,
+  EmailLink,
+  FooterText,
+  SocialIcons,
+  SocialMediaLink
+} from "./styled";
+import { resources } from "../../../components/Resources/resources";
 
 const Footer = () => (
   <Article>
-    <Content>
-      <Caption>let’s talk!</Caption>
-      <Link href={`mailto:${resources.email}`} target="_blank" title="My email">
+    <FooterContent>
+      <FooterHeading>
+        Let’s talk!
+      </FooterHeading>
+      <EmailLink
+        href={`mailto:${resources.email}`}
+        target="_blank"
+        title="My email"
+      >
         {resources.email}
-      </Link>
-      <Text>
+      </EmailLink>
+      <FooterText>
         I’m always open to new projects whenever I have the time.
         If you have a website, dashboard or mobile app in mind and need
         some help to make your ideas come to life, feel free to contact me 🤟
-      </Text>
-      <Icons>
+      </FooterText>
+      <SocialIcons>
         {resources.socialIcons.map((social, index) => (
-          <LinkSocialMedia key={index} href={social.url} target="_blank" title={social.name}>
+          <SocialMediaLink
+            key={index}
+            href={social.url}
+            target="_blank"
+            title={social.name}
+          >
             <social.icon />
-          </LinkSocialMedia>
+          </SocialMediaLink>
         ))}
-      </Icons>
-    </Content>
+      </SocialIcons>
+    </FooterContent>
   </Article>
 );
 

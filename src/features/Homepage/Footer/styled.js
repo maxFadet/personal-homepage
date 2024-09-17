@@ -4,11 +4,11 @@ export const Article = styled.footer`
   max-width: 691px;
 `;
 
-export const Content = styled.div`
+export const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: flex-start; 
+  align-items: flex-start;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     gap: 18px;
@@ -19,22 +19,22 @@ export const Content = styled.div`
   }
 `;
 
-export const Caption = styled.p`
+export const FooterHeading = styled.p`
   line-height: 15px;
-  font-weight:  ${({ theme }) => theme.fontWeights.bold};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
   text-transform: uppercase;
   margin: 0;
 `;
 
-export const Link = styled.a`
+export const EmailLink = styled.a`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.large.default};
-  font-weight:  ${({ theme }) => theme.fontWeights.heavy};
+  font-weight: ${({ theme }) => theme.fontWeights.heavy};
   line-height: 38.73px;
   text-decoration: none;
-  transition: color 0.3s ease 0s;
+  transition: color 0.3s ease;
 
   &:hover {
     color: ${({ theme }) => theme.colors.blue};
@@ -46,7 +46,7 @@ export const Link = styled.a`
   }
 `;
 
-export const Text = styled.p`
+export const FooterText = styled.p`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   line-height: 25px;
@@ -63,7 +63,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Icons = styled.div`
+export const SocialIcons = styled.div`
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -80,7 +80,7 @@ export const Icons = styled.div`
   }
 `;
 
-export const LinkSocialMedia = styled.a`
+export const SocialMediaLink = styled.a`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   transition: color 0.3s ease;
 
@@ -90,13 +90,13 @@ export const LinkSocialMedia = styled.a`
 
   svg {
     @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    width: 32px;
-    height: 232x;
+      width: 32px;
+      height: 32px;
     }
   }
 `;
