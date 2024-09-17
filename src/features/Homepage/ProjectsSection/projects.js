@@ -1,7 +1,6 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
+import useProjects from "./useProjects";
 import {
     ProjectGrid,
     ProjectTile,
@@ -10,23 +9,19 @@ import {
     ProjectLinks,
     ProjectLink,
 } from "./styled";
-import { fetchProjects } from './projectsSlice';
 import Header from "./Header";
 
 const ProjectsSection = () => {
-    const dispatch = useDispatch();
-    const { projects, isLoading, isError } = useSelector(state => state.projects);
-
-    useEffect(() => {
-        dispatch(fetchProjects());
-    }, [dispatch]);
+    const { projects, isLoading, isError } = useProjects();
 
     return (
         <>
             <Header />
-            {isLoading && <Loading />}
-            {isError && <Error />}
-            {!isLoading && !isError && (
+            {isLoading ? (
+                <Loading />
+            ) : isError ? (
+                <Error />
+            ) : (
                 <ProjectGrid>
                     {projects
                         .filter(project => project.description)
@@ -35,12 +30,24 @@ const ProjectsSection = () => {
                                 <ProjectTitle>{project.name}</ProjectTitle>
                                 <ProjectDescription>{project.description}</ProjectDescription>
                                 <ProjectLinks>
-                                    <ProjectDescription>Demo: </ProjectDescription>
-                                    <ProjectLink href={project.homepage} target="_blank" rel="noopener noreferrer">
+                                    <ProjectDescription>
+                                        Demo:
+                                    </ProjectDescription>
+                                    <ProjectLink
+                                        href={project.homepage}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         {project.homepage}
                                     </ProjectLink>
-                                    <ProjectDescription>Code: </ProjectDescription>
-                                    <ProjectLink href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                    <ProjectDescription>
+                                        Code:
+                                    </ProjectDescription>
+                                    <ProjectLink
+                                        href={project.html_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         {project.html_url}
                                     </ProjectLink>
                                 </ProjectLinks>
