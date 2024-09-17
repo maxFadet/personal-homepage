@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GithubIcon } from '../../../../components/Resources/Icons/Github.svg';
+import { ReactComponent as GithubIcon } from "../../../../components/Resources/Icons/Github.svg";
 
 export const HeaderWrapper = styled.header`
   width: 195px;

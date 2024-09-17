@@ -1,7 +1,7 @@
-import { call, put, delay, takeLatest } from 'redux-saga/effects';
-import axios from 'axios';
-import { fetchProjects, setProjects, setLoading, setError } from './projectsSlice';
-import { resources } from '../../../components/Resources/resources';
+import { call, put, delay, takeLatest } from "redux-saga/effects";
+import axios from "axios";
+import { fetchProjects, setProjects, setLoading, setError } from "./projectsSlice";
+import { resources } from "../../../components/Resources/resources";
 
 function* fetchProjectsSaga() {
   try {

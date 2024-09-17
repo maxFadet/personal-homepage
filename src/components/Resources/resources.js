@@ -1,4 +1,4 @@
-import { socialIconsData } from './Icons/socialIconsData';
+import { socialIconsData } from "./Icons/socialIconsData";
 
 export const resources = {
   currentSkills: [

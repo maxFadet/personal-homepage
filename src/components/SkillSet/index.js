@@ -1,16 +1,24 @@
-import { Container, Header, List, Item, Text } from "./styled";
+import {
+    SectionContainer,
+    SectionHeader,
+    SkillList,
+    SkillItem,
+    SkillText
+} from "./styled";
 
 const Section = ({ title, skills }) => (
-    <Container>
-        <Header>{title}</Header>
-        <List>
+    <SectionContainer>
+        <SectionHeader>
+            {title}
+        </SectionHeader>
+        <SkillList>
             {skills.map(skill => (
-                <Item key={skill}>
-                    <Text>{skill}</Text>
-                </Item>
+                <SkillItem key={skill}>
+                    <SkillText>{skill}</SkillText>
+                </SkillItem>
             ))}
-        </List>
-    </Container>
+        </SkillList>
+    </SectionContainer>
 );
 
 export default Section;

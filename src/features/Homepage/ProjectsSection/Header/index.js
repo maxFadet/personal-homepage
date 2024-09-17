@@ -1,4 +1,3 @@
-import React from "react";
 import { HeaderWrapper, GithubMark, HeaderTitle, HeaderSubtitle } from "./styled";
 
 const Header = () => {

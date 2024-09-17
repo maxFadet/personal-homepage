@@ -1,9 +1,9 @@
-import Header from './Header';
-import Section from '../../components/SkillSet';
-import Footer from './Footer';
-import ProjectsSection from '../../features/Homepage/ProjectsSection/projects';
-import { resources } from '../../components/Resources/resources';
-import { Container } from '../../components/Container';
+import Header from "./Header";
+import Section from "../../components/SkillSet";
+import Footer from "./Footer";
+import ProjectsSection from "../../features/Homepage/ProjectsSection/projects";
+import { resources } from "../../components/Resources/resources";
+import { Container } from "../../components/Container";
 
 const Homepage = () => (
     <Container>

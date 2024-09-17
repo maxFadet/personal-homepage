@@ -1,6 +1,6 @@
 import { HeaderCaption, ContentWrapper, HeaderArticle, ProfileImage, DeveloperName, DeveloperText, EmailIconWrapper } from "./styled";
 import { BaseButton } from "../../../components/Button";
-import personalPhoto from '../../../components/Resources/personal-photo.jpg';
+import personalPhoto from "../../../components/Resources/personal-photo.jpg";
 import { ThemeSwitcher } from "../Switcher";
 import { resources } from "../../../components/Resources/resources";
 

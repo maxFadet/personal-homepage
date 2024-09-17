@@ -1,4 +1,4 @@
-import { socialIcons } from './socialIcons';
+import { socialIcons } from "./socialIcons";
 
 export const socialIconsData = [
   {

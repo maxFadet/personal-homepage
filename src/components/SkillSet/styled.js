@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+export const SectionContainer = styled.article`
   background-color: ${({ theme }) => theme.colors.tile.background};
   margin: 72px auto;
   box-shadow: 
@@ -20,7 +20,7 @@ export const Container = styled.article`
   }
 `;
 
-export const Header = styled.h2`
+export const SectionHeader = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight:  ${({ theme }) => theme.fontWeights.heavy};
@@ -38,7 +38,7 @@ export const Header = styled.h2`
   }
 `;
 
-export const List = styled.ul`
+export const SkillList = styled.ul`
   display: grid;
   grid-gap: 8px;
   line-height: 25px;
@@ -58,7 +58,7 @@ export const List = styled.ul`
   }
 `;
 
-export const Item = styled.li`
+export const SkillItem = styled.li`
   position: relative;
   padding-left: 27px;
   line-height: 0;
@@ -79,7 +79,7 @@ export const Item = styled.li`
   }
 `;
 
-export const Text = styled.span`
+export const SkillText = styled.span`
   color: ${({ theme }) => theme.colors.text};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   font-weight: ${({ theme }) => theme.fontWeights.normal};
