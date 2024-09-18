@@ -1,4 +1,3 @@
-import { useDispatch, useSelector } from "react-redux";
 import {
     SwitcherWrapper,
     SwitcherCaption,
@@ -6,19 +5,15 @@ import {
     SwitcherIcon,
     SwitcherIconWrapper
 } from "./styled";
-import { selectTheme, switchTheme } from "./themeSlice";
 
-export const ThemeSwitcher = () => {
-    const isDarkMode = useSelector(selectTheme);
-    const dispatch = useDispatch();
-
+export const ThemeSwitcher = ({ darkMode, toggleTheme }) => {
     return (
         <SwitcherWrapper>
             <SwitcherCaption>
-                dark mode {isDarkMode ? "on" : "off"}
+                dark mode {darkMode ? "on" : "off"}
             </SwitcherCaption>
-            <SwitcherButton onClick={() => dispatch(switchTheme())}>
-                <SwitcherIconWrapper darkMode={isDarkMode}>
+            <SwitcherButton onClick={toggleTheme}>
+                <SwitcherIconWrapper darkMode={darkMode}>
                     <SwitcherIcon />
                 </SwitcherIconWrapper>
             </SwitcherButton>

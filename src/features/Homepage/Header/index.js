@@ -1,12 +1,20 @@
-import { HeaderCaption, ContentWrapper, HeaderArticle, ProfileImage, DeveloperName, DeveloperText, EmailIconWrapper } from "./styled";
+import {
+    HeaderCaption,
+    ContentWrapper,
+    HeaderArticle,
+    ProfileImage,
+    DeveloperName,
+    DeveloperText,
+    EmailIconWrapper
+} from "./styled";
 import { BaseButton } from "../../../components/Button";
 import personalPhoto from "../../../components/Resources/personal-photo.jpg";
 import { ThemeSwitcher } from "../Switcher";
 import { resources } from "../../../components/Resources/resources";
 
-const Header = () => (
+const Header = ({ darkMode, toggleTheme }) => (
     <HeaderArticle>
-        <ThemeSwitcher />
+        <ThemeSwitcher darkMode={darkMode} toggleTheme={toggleTheme} />
         <ProfileImage src={personalPhoto} alt="Maksim Padrabinkin" />
         <ContentWrapper>
             <HeaderCaption>
