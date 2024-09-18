@@ -4,7 +4,8 @@ export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin: 24px 0 120px;
+  margin: 24px auto 0;
+  padding-bottom: 50px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
@@ -104,4 +105,28 @@ export const ProjectLinks = styled.div`
   grid-template-columns: auto 1fr;
   grid-gap: 8px;
   align-items: center;
+`;
+
+export const SeeMoreButton = styled.button`
+  display: block;
+  margin: 0 auto 130px;
+  padding: 10px 20px;
+  background-color: ${({ theme }) => theme.colors.blue};
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 2;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.blue};
+  }
+`;
+
+export const SeeLessButton = styled(SeeMoreButton)`
+  background-color: ${({ theme }) => theme.colors.blue};
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.blue};
+  }
 `;
