@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import Section from "../../components/SkillSet";
 import Footer from "./Footer";
