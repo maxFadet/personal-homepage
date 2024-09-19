@@ -1,14 +1,16 @@
 import styled from "styled-components";
+import { BaseButton } from "../../../components/Button";
 
 export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin: 24px auto 0;
-  padding-bottom: 50px;
+  margin: 24px auto 120px;
+  position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
+    margin-bottom: 84px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
@@ -25,17 +27,39 @@ export const ProjectTile = styled.div`
   padding: 56px;
   border-radius: 4px;
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
-  transition: border 0.3s ease;
+  transition: 
+    border 0.3s ease, 
+    background-color 0.3s ease, 
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
+  z-index: 1;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.tile.hover};
   }
 
+  ${({ isLastTwo }) =>
+    isLastTwo &&
+    `
+      filter: blur(5px);
+      opacity: 0.7;
+      transition: filter 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+    `}
+
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    ${({ isHiddenOnTablet }) =>
+    isHiddenOnTablet &&
+    `
+        display: none;
+      `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
@@ -62,7 +86,7 @@ export const ProjectTitle = styled.h3`
   }
 `;
 
-const TextBase = styled.p`
+export const ProjectDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
   line-height: 25px;
   margin: 0;
@@ -76,11 +100,9 @@ const TextBase = styled.p`
     line-height: 17px;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
-`;
+  `;
 
-export const ProjectDescription = styled(TextBase)``;
-
-export const ProjectLink = styled(TextBase).attrs({ as: 'a' })`
+export const ProjectLink = styled(ProjectDescription).attrs({ as: 'a' })`
   color: ${({ theme }) => theme.colors.blue};
   text-decoration-color: rgba(3, 102, 214, 0.2);
   text-underline-offset: 5px;
@@ -107,26 +129,37 @@ export const ProjectLinks = styled.div`
   align-items: center;
 `;
 
-export const SeeMoreButton = styled.button`
-  display: block;
-  margin: 0 auto 130px;
-  padding: 10px 20px;
-  background-color: ${({ theme }) => theme.colors.blue};
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  z-index: 2;
+export const Button = styled(BaseButton).attrs({ as: 'button' })`
+  cursor: ${({ theme }) => theme.cursor.pointer};
+  font-weight: normal;
+`;
 
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.blue};
+export const SeeMoreButtonContainer = styled.div`
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    bottom: 13%;
+  }
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
+    bottom: 15%;
   }
 `;
 
-export const SeeLessButton = styled(SeeMoreButton)`
-  background-color: ${({ theme }) => theme.colors.blue};
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.blue};
+export const SeeLessButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: -90px auto 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin: -60px auto 84px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
+    margin: -30px auto 48px;
   }
 `;

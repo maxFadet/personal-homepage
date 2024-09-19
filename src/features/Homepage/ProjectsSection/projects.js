@@ -9,8 +9,9 @@ import {
     ProjectDescription,
     ProjectLinks,
     ProjectLink,
-    SeeMoreButton,
-    SeeLessButton,
+    Button,
+    SeeMoreButtonContainer,
+    SeeLessButtonContainer,
 } from "./styled";
 import Header from "./Header";
 
@@ -27,36 +28,48 @@ const ProjectsSection = () => {
     if (isLoading) return <Loading />;
     if (isError) return <Error />;
 
+    const tilesWithFlags = visibleProjects.map((project, index) => {
+        const isLastTwo = !isExpanded && (index >= visibleProjects.length - 2);
+        const isHiddenOnTablet = !isExpanded && (index === visibleProjects.length - 2);
+        return { ...project, isLastTwo, isHiddenOnTablet };
+    });
+
     const showMoreButton = (
         !isExpanded && hasMoreProjects && (
-            <SeeMoreButton onClick={handleShowMore}>
-                See more
-            </SeeMoreButton>
+            <SeeMoreButtonContainer>
+                <Button onClick={handleShowMore}>
+                    See more
+                </Button>
+            </SeeMoreButtonContainer>
         )
     );
 
     const showLessButton = (
         isExpanded && (
-            <SeeLessButton onClick={handleShowLess}>
-                Hide
-            </SeeLessButton>
+            <SeeLessButtonContainer>
+                <Button onClick={handleShowLess}>
+                    Hide
+                </Button>
+            </SeeLessButtonContainer>
         )
     );
 
     return (
         <>
             <Header />
-            <ProjectGrid>
-                {visibleProjects
+            <ProjectGrid isExpanded={isExpanded}>
+                {tilesWithFlags
                     .filter(project => project.description)
-                    .map(project => (
-                        <ProjectTile key={project.id}>
+                    .map((project) => (
+                        <ProjectTile
+                            key={project.id}
+                            isLastTwo={project.isLastTwo}
+                            isHiddenOnTablet={project.isHiddenOnTablet}
+                        >
                             <ProjectTitle>{project.name}</ProjectTitle>
                             <ProjectDescription>{project.description}</ProjectDescription>
                             <ProjectLinks>
-                                    <ProjectDescription>
-                                        Demo:
-                                    </ProjectDescription>
+                                <ProjectDescription>Demo:</ProjectDescription>
                                 <ProjectLink
                                     href={project.homepage}
                                     target="_blank"
@@ -64,9 +77,7 @@ const ProjectsSection = () => {
                                 >
                                     {project.homepage}
                                 </ProjectLink>
-                                    <ProjectDescription>
-                                        Code:
-                                    </ProjectDescription>
+                                <ProjectDescription>Code:</ProjectDescription>
                                 <ProjectLink
                                     href={project.html_url}
                                     target="_blank"
@@ -77,8 +88,8 @@ const ProjectsSection = () => {
                             </ProjectLinks>
                         </ProjectTile>
                     ))}
+                {showMoreButton}
             </ProjectGrid>
-            {showMoreButton}
             {showLessButton}
         </>
     );
