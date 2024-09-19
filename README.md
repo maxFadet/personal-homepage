@@ -1,6 +1,63 @@
-# Getting Started with Create React App
+# Maksim Padrabinkin - Frontend Developer CV 🧑‍💻
+
+## Demo
+
+https://maxfadet.github.io/todos-list-react/
+
+## Description:
+
+This project is a dynamic CV website designed to provide a comprehensive overview of my skills, projects, and contact details. The site features a dark/light mode toggle, an error handling mechanism for project loading, and a responsive layout to ensure a seamless user experience across various devices.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What it looks like:
+
+<div align="center">
+<img src="https://github.com/maxFadet/personal-homepage/blob/master/presentation.gif" title="Responsiveness" alt="Responsiveness"/>
+</div>
+
+## Features:
+
+### Theme Switching:
+- Users can toggle between light and dark themes using a custom theme switcher.
+### Project Display: 
+- The project section dynamically fetches and displays a list of projects from GitHub. It includes error handling and a loading state.
+### Responsive Design: 
+- The layout adapts seamlessly to different screen sizes, including tablets and phones.
+### Show More/Show Less Functionality:
+- Expand or collapse the list of projects with a button click. Hidden projects are blurred to maintain focus on visible content. The blur effect is applied to projects when they are not currently shown.
+### Skills Section:
+- Highlights current skills and future learning goals.
+### Contact Information: 
+- Provides contact details and social media links for networking and job opportunities.
+
+&nbsp;
+
+## :hammer_and_wrench: Languages and Tools :
+
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/axios/axios-plain-wordmark.svg" title="Axios" **alt="Axios" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+</div>
+&nbsp;
+
+  - useState
+  - useEffect
+  - custom hooks
+  - ES6+ Features JavaScript
+  - CSS Grid Layout
+  - CSS Flex Layout
+  - media-queries
+  - box model
+  - styled components
+  - normalize.css
+  - BEM convention
+  - markdown
+&nbsp;
 
 ## Available Scripts
 
@@ -13,11 +70,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -39,32 +91,22 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+&nbsp;
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is developed by maxFadet 
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHQ5c3J6NTlyNms0ZWgzaGgxd3NzNGM5N3dybHRwOHRhZWZpMTh1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/STlF2GH4HbeZAAXlq5/giphy.gif" width="40" height="40">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="right">
+  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600"/>
+  <div id="badges">
+  <a href="https://www.linkedin.com/in/max-padrabinkin-4a739a251/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://github.com/maxFadet?tab=repositories">
+    <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+  </a>
+  <a href="https://youcodefrontend2.slack.com/team/U043BC713F1">
+    <img src="https://img.shields.io/badge/Slack-purple?style=for-the-badge&logo=slack&logoColor=white" alt="Slack"/>
+  </a>
+</div>
