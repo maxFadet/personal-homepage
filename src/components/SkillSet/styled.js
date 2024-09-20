@@ -7,7 +7,7 @@ export const SectionContainer = styled.article`
   ${({ theme }) => theme.colors.tile.shadow} 0px 16px 58px, 
   ${({ theme }) => theme.colors.tile.shadow} 0px -2px 50px;
   padding: 32px;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius.small};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     padding: 24px;

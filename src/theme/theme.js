@@ -74,6 +74,9 @@ export const sharedStyles = {
         default: "default",
         pointer: "pointer",
     },
+    borderRadius: {
+        small: "4px",
+    },
 };
 
 export const lightTheme = {

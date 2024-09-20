@@ -25,7 +25,7 @@ export const ProjectTile = styled.div`
     0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 
     0px -2px 50px ${({ theme }) => theme.colors.tile.shadow};
   padding: 56px;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius.small};
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
   transition: 
     border 0.3s ease, 

@@ -8,7 +8,7 @@ export const ButtonLink = styled.a`
   font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   gap: 16px;
   padding: 12px 16px;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius.small};
   background: ${({ theme }) => theme.colors.blue};
   color: ${({ theme }) => theme.colors.button.text};
   border: 1px solid rgba(209, 213, 218, 0.3);
