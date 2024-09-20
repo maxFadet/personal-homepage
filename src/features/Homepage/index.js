@@ -5,9 +5,9 @@ import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import { resources } from "../../components/Resources/resources";
 import { Container } from "../../components/Container";
 
-const Homepage = ({ darkMode, toggleTheme }) => (
+const Homepage = () => (
     <Container>
-        <Header darkMode={darkMode} toggleTheme={toggleTheme} />
+        <Header />
         <Section title="My skillset includes 🛠️" skills={resources.currentSkills} />
         <Section title="What I want to learn next 🚀" skills={resources.futureSkills} />
         <ProjectsSection />

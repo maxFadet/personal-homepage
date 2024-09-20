@@ -14,7 +14,7 @@ import { resources } from "../../../components/Resources/resources";
 
 const Header = ({ darkMode, toggleTheme }) => (
     <HeaderArticle>
-        <ThemeSwitcher darkMode={darkMode} toggleTheme={toggleTheme} />
+        <ThemeSwitcher />
         <ProfileImage src={personalPhoto} alt="Maksim Padrabinkin" />
         <ContentWrapper>
             <HeaderCaption>
