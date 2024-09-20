@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Article = styled.footer`
+export const FooterWrapper = styled.footer`
   max-width: 691px;
 `;
 

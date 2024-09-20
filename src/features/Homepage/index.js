@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Section from "../../components/SkillSet";
 import Footer from "./Footer";
-import ProjectsSection from "../../features/Homepage/ProjectsSection/projects";
+import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import { resources } from "../../components/Resources/resources";
 import { Container } from "../../components/Container";
 

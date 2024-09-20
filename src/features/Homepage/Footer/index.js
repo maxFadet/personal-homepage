@@ -1,7 +1,7 @@
 import {
   FooterHeading,
   FooterContent,
-  Article,
+  FooterWrapper,
   EmailLink,
   FooterText,
   SocialIcons,
@@ -10,7 +10,7 @@ import {
 import { resources } from "../../../components/Resources/resources";
 
 const Footer = () => (
-  <Article>
+  <FooterWrapper>
     <FooterContent>
       <FooterHeading>
         Let’s talk!
@@ -40,7 +40,7 @@ const Footer = () => (
         ))}
       </SocialIcons>
     </FooterContent>
-  </Article>
+  </FooterWrapper>
 );
 
 export default Footer;
