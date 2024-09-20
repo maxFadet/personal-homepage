@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { ButtonLink } from "../../../components/Button";
 
-export const ProjectGrid = styled.div`
+export const ProjectGrid = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin: 24px auto 120px;
   position: relative;
+  list-style: none;
+  padding: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
@@ -19,7 +21,7 @@ export const ProjectGrid = styled.div`
   }
 `;
 
-export const ProjectTile = styled.div`
+export const ProjectTile = styled.li`
   background-color: ${({ theme }) => theme.colors.tile.background};
   box-shadow: 
     0px 16px 58px ${({ theme }) => theme.colors.tile.shadow}, 

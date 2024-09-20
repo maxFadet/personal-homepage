@@ -12,7 +12,7 @@ import personalPhoto from "../../../components/Resources/personal-photo.jpg";
 import { ThemeSwitcher } from "../Switcher";
 import { resources } from "../../../components/Resources/resources";
 
-const Header = ({ darkMode, toggleTheme }) => (
+const Header = () => (
     <HeaderArticle>
         <ThemeSwitcher />
         <ProfileImage src={personalPhoto} alt="Maksim Padrabinkin" />
@@ -29,13 +29,13 @@ const Header = ({ darkMode, toggleTheme }) => (
             <ButtonLink
                 href={`mailto:${resources.email}`}
                 target="_blank"
-                title="My email"
+                title={resources.email}
             >
                 <EmailIconWrapper />
                 Hire Me
             </ButtonLink>
         </ContentWrapper>
-    </HeaderArticle>
+    </HeaderArticle >
 );
 
 export default Header;

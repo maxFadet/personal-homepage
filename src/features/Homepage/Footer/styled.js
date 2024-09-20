@@ -4,11 +4,12 @@ export const FooterWrapper = styled.footer`
   max-width: 691px;
 `;
 
-export const FooterContent = styled.div`
+export const FooterContent = styled.address`
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
+  font-style: unset;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     gap: 18px;
@@ -19,7 +20,7 @@ export const FooterContent = styled.div`
   }
 `;
 
-export const FooterHeading = styled.p`
+export const FooterHeading = styled.h2`
   line-height: 15px;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};

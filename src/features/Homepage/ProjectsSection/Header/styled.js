@@ -43,10 +43,11 @@ export const HeaderTitle = styled.h2`
   }
 `;
 
-export const HeaderSubtitle = styled.p`
+export const HeaderSubtitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
   margin: 0;
   color: ${({ theme }) => theme.colors.textSecondaryColor};
+  font-weight: normal;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     line-height: 26px;

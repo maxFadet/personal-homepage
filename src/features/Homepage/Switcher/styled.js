@@ -38,6 +38,7 @@ export const SwitcherButton = styled.button`
   background-color: ${({ theme }) => theme.colors.backgroundSwitcher};
   position: relative;
   transition: background 0.3s, border 0.3s;
+  outline-offset: 8px;
 `;
 
 export const SwitcherIcon = styled(Switcher)`

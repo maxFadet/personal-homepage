@@ -40,7 +40,7 @@ export const ContentWrapper = styled.div`
   align-items: flex-start;
 `;
 
-export const HeaderCaption = styled.p`
+export const HeaderCaption = styled.div`
   line-height: 15px;
   font-weight:  ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
