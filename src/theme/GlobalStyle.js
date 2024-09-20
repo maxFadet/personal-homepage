@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${({ theme }) => theme.colors.background};
         color: ${({ theme }) => theme.colors.text};
         word-break: break-word;
+        transition: background 0.3s, color 0.3s;
     }
 `;
 

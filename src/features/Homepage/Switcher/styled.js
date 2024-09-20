@@ -37,6 +37,7 @@ export const SwitcherButton = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.backgroundSwitcher};
   position: relative;
+  transition: background 0.3s, border 0.3s;
 `;
 
 export const SwitcherIcon = styled(Switcher)`
@@ -55,5 +56,5 @@ export const SwitcherIconWrapper = styled.div`
   top: 50%;
   left: ${({ darkMode }) => darkMode ? "calc(100% - 22px)" : "2px"};
   transform: translateY(-50%);
-  transition: left 0.3s ease;
+  transition: left 0.3s ease, 0.3s, background 0.3s;
   `;
