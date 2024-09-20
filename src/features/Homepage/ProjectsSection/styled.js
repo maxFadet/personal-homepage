@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BaseButton } from "../../../components/Button";
+import { ButtonLink } from "../../../components/Button";
 
 export const ProjectGrid = styled.div`
   display: grid;
@@ -129,7 +129,7 @@ export const ProjectLinks = styled.div`
   align-items: center;
 `;
 
-export const Button = styled(BaseButton).attrs({ as: 'button' })`
+export const Button = styled(ButtonLink).attrs({ as: 'button' })`
   cursor: ${({ theme }) => theme.cursor.pointer};
   font-weight: normal;
 `;

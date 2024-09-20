@@ -7,7 +7,7 @@ import {
     DeveloperText,
     EmailIconWrapper
 } from "./styled";
-import { BaseButton } from "../../../components/Button";
+import { ButtonLink } from "../../../components/Button";
 import personalPhoto from "../../../components/Resources/personal-photo.jpg";
 import { ThemeSwitcher } from "../Switcher";
 import { resources } from "../../../components/Resources/resources";
@@ -26,14 +26,14 @@ const Header = ({ darkMode, toggleTheme }) => (
             <DeveloperText>
                 👨🏻‍💻  I'm a dedicated Frontend Developer with a passion for React, actively seeking new job opportunities.
             </DeveloperText>
-            <BaseButton
+            <ButtonLink
                 href={`mailto:${resources.email}`}
                 target="_blank"
                 title="My email"
             >
                 <EmailIconWrapper />
                 Hire Me
-            </BaseButton>
+            </ButtonLink>
         </ContentWrapper>
     </HeaderArticle>
 );

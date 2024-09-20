@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BaseButton = styled.a`
+export const ButtonLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
