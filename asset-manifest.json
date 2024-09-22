@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.2481fde9.js",
+    "main.js": "/personal-homepage/static/js/main.95a9925b.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/personal-photo.jpg": "/personal-homepage/static/media/personal-photo.af9008a01c61ddc42e1e.jpg",
     "static/media/Instagram.svg": "/personal-homepage/static/media/Instagram.e07a89e51a0ac24b9cae6f290d150d21.svg",
@@ -12,10 +12,11 @@
     "static/media/Message.svg": "/personal-homepage/static/media/Message.c1e8ac9049a441b2a33b0d2f3bd79e39.svg",
     "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.9bd34695931609c45e0a42fea13b6f09.svg",
     "static/media/Loader.svg": "/personal-homepage/static/media/Loader.a387f7da0cae7e830bf9ce302fca4813.svg",
-    "main.2481fde9.js.map": "/personal-homepage/static/js/main.2481fde9.js.map",
+    "static/media/bullet.svg": "/personal-homepage/static/media/bullet.65fee71dd2ebf05c6aaf2ec57d3e51fc.svg",
+    "main.95a9925b.js.map": "/personal-homepage/static/js/main.95a9925b.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2481fde9.js"
+    "static/js/main.95a9925b.js"
   ]
 }
