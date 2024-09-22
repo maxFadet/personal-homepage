@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as BulletImage } from "./bullet.svg";
 
 export const SectionContainer = styled.article`
   background-color: ${({ theme }) => theme.colors.tile.background};
@@ -24,16 +25,14 @@ export const SectionHeader = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight:  ${({ theme }) => theme.fontWeights.heavy};
-  line-height: 36px;
+  line-height: 1.2;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 29px;
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 22px;
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
   }
 `;
@@ -41,7 +40,6 @@ export const SectionHeader = styled.h2`
 export const SkillList = styled.ul`
   display: grid;
   grid-gap: 8px;
-  line-height: 25px;
   list-style: none;
   border-top: 1px solid ${({ theme }) => theme.colors.backgroundSwitcher};
   padding: 32px 0 0;
@@ -59,35 +57,31 @@ export const SkillList = styled.ul`
 `;
 
 export const SkillItem = styled.li`
-  position: relative;
-  padding-left: 27px;
-  line-height: 0;
+  display: flex;
+  line-height: 1.4;
 
-  ::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: ${({ theme }) => theme.colors.blue};
-    font-size: 30px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) { 
+    line-height: 1.2;
   }
+`;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    ::before {
-      font-size: 20px;
-      padding-left: 0;
-    }
+export const Bullet = styled(BulletImage)`
+  color: ${({ theme }) => theme.colors.blue};
+  margin-right: 16px;
+  height: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) { 
+    width: 6px;
+    margin-right: 8px;
   }
 `;
 
 export const SkillText = styled.span`
-  color: ${({ theme }) => theme.colors.text};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
-  font-weight: ${({ theme }) => theme.fontWeights.normal};
-  line-height: 25px;
+  line-height: 1.4;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 17px;
+    line-height: 1.2;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
-    margin: -10px;
   }
 `;

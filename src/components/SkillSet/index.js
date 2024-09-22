@@ -3,7 +3,8 @@ import {
     SectionHeader,
     SkillList,
     SkillItem,
-    SkillText
+    SkillText,
+    Bullet
 } from "./styled";
 
 const Section = ({ title, skills }) => (
@@ -14,6 +15,7 @@ const Section = ({ title, skills }) => (
         <SkillList>
             {skills.map(skill => (
                 <SkillItem key={skill}>
+                    <Bullet />
                     <SkillText>{skill}</SkillText>
                 </SkillItem>
             ))}
