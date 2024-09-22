@@ -23,7 +23,7 @@ export const ErrorIcon = styled(DangerIcon)`
 export const ErrorTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
-  line-height: 29px;
+  line-height: ${({ theme }) => theme.lineHeight.small};;
   margin: 23px 0 32px;
   color: ${({ theme }) => theme.colors.textSecondaryColor};;
 
@@ -33,23 +33,23 @@ export const ErrorTitle = styled.h3`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
-    line-height: 24px;
   }
 `;
 
 export const ErrorParagraph = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
-  line-height: 28px;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
   margin-bottom: 32px;
   color: ${({ theme }) => theme.colors.textSecondaryColor};;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 24px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
+    line-height: ${({ theme }) => theme.lineHeight.medium};;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
+    line-height: ${({ theme }) => theme.lineHeight.small};;
     margin-bottom: 24px;
   }
 `;

@@ -21,7 +21,7 @@ export const FooterContent = styled.address`
 `;
 
 export const FooterHeading = styled.h2`
-  line-height: 15px;
+  line-height: ${({ theme }) => theme.lineHeight.medium};;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.small.default};
   letter-spacing: 0;
@@ -33,7 +33,7 @@ export const EmailLink = styled.a`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.large.default};
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
-  line-height: 38.73px;
+  line-height: ${({ theme }) => theme.lineHeight.small};;
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -43,23 +43,22 @@ export const EmailLink = styled.a`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes.headlines.large.mobile};
-    line-height: 22px;
   }
 `;
 
 export const FooterText = styled.p`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
-  line-height: 25px;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 21px;
+    line-height: ${({ theme }) => theme.lineHeight.medium};;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 17px;
+    line-height: ${({ theme }) => theme.lineHeight.small};;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
 `;

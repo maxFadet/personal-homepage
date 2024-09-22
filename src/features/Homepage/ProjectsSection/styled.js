@@ -75,31 +75,31 @@ export const ProjectTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin: 0;
-  line-height: 29px;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 25px;
+    line-height: ${({ theme }) => theme.lineHeight.medium};;
     font-size: ${({ theme }) => theme.fontSizes.headlines.small.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 20px;
+    line-height: ${({ theme }) => theme.lineHeight.small};;
     font-size: ${({ theme }) => theme.fontSizes.headlines.small.mobile};
   }
 `;
 
 export const ProjectDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
-  line-height: 25px;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 21px;
+    line-height: ${({ theme }) => theme.lineHeight.medium};;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 17px;
+    line-height: ${({ theme }) => theme.lineHeight.small};;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
   `;

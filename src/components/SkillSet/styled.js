@@ -25,9 +25,9 @@ export const SectionHeader = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight:  ${({ theme }) => theme.fontWeights.heavy};
-  line-height: 1.2;
+  line-height: ${({ theme }) => theme.lineHeight.small};
   margin: 0;
-
+  
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.tablet};
   }
@@ -58,10 +58,10 @@ export const SkillList = styled.ul`
 
 export const SkillItem = styled.li`
   display: flex;
-  line-height: 1.4;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) { 
-    line-height: 1.2;
+    line-height: ${({ theme }) => theme.lineHeight.small};;
   }
 `;
 
@@ -78,10 +78,10 @@ export const Bullet = styled(BulletImage)`
 
 export const SkillText = styled.span`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
-  line-height: 1.4;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 1.2;
+    line-height: ${({ theme }) => theme.lineHeight.small};;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
 `;

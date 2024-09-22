@@ -14,7 +14,7 @@ export const SwitcherWrapper = styled.div`
 `;
 
 export const SwitcherCaption = styled.p`
-  line-height: 15px;
+  line-height: ${({ theme }) => theme.lineHeight.medium};;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size:  ${({ theme }) => theme.fontSizes.paragraph.small.default};
   text-transform: uppercase;

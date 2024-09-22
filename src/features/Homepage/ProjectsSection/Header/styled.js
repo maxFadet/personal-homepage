@@ -28,17 +28,15 @@ export const HeaderTitle = styled.h2`
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-size: ${({ theme }) => theme.fontSizes.headlines.medium.default};
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
-  line-height: 36px;
+  line-height: ${({ theme }) => theme.lineHeight.small};;
   text-align: center;
   margin: 12px 0 8px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 29px;
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 22px;
     font-size: ${({ theme }) => theme.fontSizes.headlines.medium.mobile};
   }
 `;
@@ -48,13 +46,9 @@ export const HeaderSubtitle = styled.h3`
   margin: 0;
   color: ${({ theme }) => theme.colors.textSecondaryColor};
   font-weight: normal;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: 26px;
-  }
+  line-height: ${({ theme }) => theme.lineHeight.large};;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: 24px;
     font-size: ${({ theme }) => theme.fontSizes.paragraph.large.mobile};
   }
 `;

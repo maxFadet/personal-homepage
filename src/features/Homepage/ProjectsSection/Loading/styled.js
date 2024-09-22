@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 
 export const Text = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.large.default};
-  line-height: 28px;
+  line-height: ${({ theme }) => theme.lineHeight.large};;
   margin: 0;
   color: ${({ theme }) => theme.colors.textSecondaryColor};;
 `;
