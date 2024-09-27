@@ -1,4 +1,4 @@
-# Maksim Padrabinkin - Frontend Developer CV 🧑‍💻
+# Maksim Padrabinkin - Frontend Developer Portfolio 🧑‍💻
 
 ## Demo
 
