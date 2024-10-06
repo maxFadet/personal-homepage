@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const useVisibleProjects = (projects, initialVisibleCount = 4) => {
     const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
     const [isExpanded, setIsExpanded] = useState(false);
+
+    useEffect(() => {
+        setVisibleCount(initialVisibleCount);
+    }, [projects.length]);
 
     const handleShowMore = () => {
         setIsExpanded(true);
