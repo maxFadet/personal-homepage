@@ -12,7 +12,7 @@ const useVisibleProjects = (projects, initialVisibleCount = 4) => {
 
     const handleShowMore = () => {
         setIsExpanded(true);
-        setVisibleCount(filteredProjects.length); // Показываем все проекты с описанием
+        setVisibleCount(filteredProjects.length);
     };
 
     const handleShowLess = () => {
