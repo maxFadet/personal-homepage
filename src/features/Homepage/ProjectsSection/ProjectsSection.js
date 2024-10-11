@@ -34,26 +34,6 @@ const ProjectsSection = () => {
         return { ...project, isLastTwo, isHiddenOnTablet };
     });
 
-    const showMoreButton = (
-        !isExpanded && hasMoreProjects && (
-            <SeeMoreButtonContainer>
-                <Button onClick={handleShowMore}>
-                    See more
-                </Button>
-            </SeeMoreButtonContainer>
-        )
-    );
-
-    const showLessButton = (
-        isExpanded && (
-            <SeeLessButtonContainer>
-                <Button onClick={handleShowLess}>
-                    Hide
-                </Button>
-            </SeeLessButtonContainer>
-        )
-    );
-
     return (
         <>
             <Header />
@@ -88,11 +68,15 @@ const ProjectsSection = () => {
                             </ProjectLinks>
                         </ProjectTile>
                     ))}
-                {showMoreButton}
             </ProjectGrid>
-            {showLessButton}
+            <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                <Button onClick={isExpanded ? handleShowLess : handleShowMore}>
+                    {isExpanded ? 'Hide' : 'See more'}
+                </Button>
+            </div>
         </>
     );
 };
+
 
 export default ProjectsSection;
