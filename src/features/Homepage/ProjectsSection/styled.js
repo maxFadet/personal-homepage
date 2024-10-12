@@ -9,9 +9,9 @@ export const ProjectGrid = styled.ul`
   position: relative;
   list-style: none;
   padding: 0;
-  transition: max-height 0.5s ease; /* Плавный переход высоты */
-  max-height: ${({ isExpanded }) => (isExpanded ? '2000px' : '500px')}; /* Высота меняется в зависимости от раскрытия */
-  overflow: hidden; /* Скрываем контент, который выходит за пределы высоты */
+  transition: max-height 0.5s ease;
+  max-height: ${({ isExpanded }) => (isExpanded ? '2000px' : '500px')};
+  overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
