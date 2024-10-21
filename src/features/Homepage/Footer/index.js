@@ -6,17 +6,10 @@ import {
   FooterText,
   SocialIcons,
   SocialMediaLink,
-  ScrollToTopButton,
 } from "./styled";
 import { resources } from "../../../components/Resources/resources";
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <FooterWrapper>
@@ -48,9 +41,6 @@ const Footer = () => {
             </SocialMediaLink>
           ))}
         </SocialIcons>
-        <ScrollToTopButton onClick={scrollToTop}>
-          ↑
-        </ScrollToTopButton>
       </FooterContent>
     </FooterWrapper>
   );

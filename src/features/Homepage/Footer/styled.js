@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ButtonLink } from "../../../components/Button";
 
 export const FooterWrapper = styled.footer`
   max-width: 691px;
@@ -19,32 +18,6 @@ export const FooterContent = styled.address`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
     gap: 12px;
-  }
-`;
-
-export const ScrollToTopButton = styled(ButtonLink).attrs({ as: 'button' })`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px 16px;
-  cursor: pointer;
-  background-color: ${({ theme }) => theme.colors.blue};
-  color: ${({ theme }) => theme.colors.button.text};
-  border-radius: ${({ theme }) => theme.borderRadius.small};
-  transition: background-color 0.3s ease, transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    background-color: ${({ theme }) => theme.colors.button.active};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    font-size: 20px;
   }
 `;
 
