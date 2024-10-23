@@ -4,15 +4,10 @@ import Footer from "./Footer";
 import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import { resources } from "../../components/Resources/resources";
 import { Container } from "../../components/Container";
-import { ScrollToTopButton } from "../../components/Container"
+import { ScrollToTopButton } from "../../components/Button"
+import { scrollToTop } from "../../components/utils/scrollToTop"
 
 const Homepage = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
 
     return (
         <Container>

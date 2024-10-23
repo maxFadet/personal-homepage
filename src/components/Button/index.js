@@ -31,3 +31,32 @@ export const ButtonLink = styled.a`
     gap: 12px;
   }
 `;
+
+
+export const ScrollToTopButton = styled(ButtonLink).attrs({ as: 'button' })`
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.button.text};
+  border-radius: ${({ theme }) => theme.borderRadius.small};
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: ${({ theme }) => theme.colors.button.active};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
+    font-size: 20px;
+    right: 10px;
+    bottom: 10px;
+  }
+`;
