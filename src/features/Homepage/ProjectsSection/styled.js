@@ -41,7 +41,6 @@ export const ProjectTile = styled.li`
   flex-direction: column;
   gap: 24px;
   position: relative;
-  z-index: 1;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.tile.hover};
