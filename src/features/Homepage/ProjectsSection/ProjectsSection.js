@@ -11,7 +11,6 @@ import {
     ProjectLink,
     Button,
     SeeMoreButtonContainer,
-    SeeLessButtonContainer,
 } from "./styled";
 import Header from "./Header";
 
@@ -19,7 +18,6 @@ const ProjectsSection = () => {
     const { projects, isLoading, isError } = useProjects();
     const {
         visibleProjects,
-        hasMoreProjects,
         handleShowMore,
         handleShowLess,
         isExpanded
@@ -69,14 +67,13 @@ const ProjectsSection = () => {
                         </ProjectTile>
                     ))}
             </ProjectGrid>
-            <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <SeeMoreButtonContainer isExpanded={isExpanded}>
                 <Button onClick={isExpanded ? handleShowLess : handleShowMore}>
                     {isExpanded ? 'Hide' : 'See more'}
                 </Button>
-            </div>
+            </SeeMoreButtonContainer>
         </>
     );
 };
-
 
 export default ProjectsSection;

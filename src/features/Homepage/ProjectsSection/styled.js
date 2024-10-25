@@ -140,18 +140,17 @@ export const Button = styled(ButtonLink).attrs({ as: 'button' })`
 `;
 
 export const SeeMoreButtonContainer = styled.div`
-  position: absolute;
-  bottom: 22%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
+  display: flex;
+  justify-content: center;
+  margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-90px auto 120px')};
+  transition: margin 0.5s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    bottom: 13%;
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-60px auto 84px')};
   }
-  
+
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    bottom: 15%;
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-30px auto 48px')};
   }
 `;
 
