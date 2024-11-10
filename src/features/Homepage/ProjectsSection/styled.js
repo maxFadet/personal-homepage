@@ -11,7 +11,7 @@ export const ProjectGrid = styled.ul`
   padding: 0;
   transition: max-height 0.5s ease;
   max-height: ${({ isExpanded }) => (isExpanded ? '2000px' : '500px')};
-  overflow: hidden;
+  overflow: visible;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: 1fr;
@@ -143,7 +143,8 @@ export const SeeMoreButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-90px auto 120px')};
-  transition: margin 0.5s ease;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-60px auto 84px')};
