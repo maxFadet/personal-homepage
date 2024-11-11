@@ -78,31 +78,31 @@ export const ProjectTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.headlines.small.default};
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   margin: 0;
-  line-height: ${({ theme }) => theme.lineHeight.large};;
+  line-height: ${({ theme }) => theme.lineHeight.large};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: ${({ theme }) => theme.lineHeight.medium};;
+    line-height: ${({ theme }) => theme.lineHeight.medium};
     font-size: ${({ theme }) => theme.fontSizes.headlines.small.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: ${({ theme }) => theme.lineHeight.small};;
+    line-height: ${({ theme }) => theme.lineHeight.small};
     font-size: ${({ theme }) => theme.fontSizes.headlines.small.mobile};
   }
 `;
 
 export const ProjectDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.default};
-  line-height: ${({ theme }) => theme.lineHeight.large};;
+  line-height: ${({ theme }) => theme.lineHeight.large};
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    line-height: ${({ theme }) => theme.lineHeight.medium};;
+    line-height: ${({ theme }) => theme.lineHeight.medium};
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.tablet};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    line-height: ${({ theme }) => theme.lineHeight.small};;
+    line-height: ${({ theme }) => theme.lineHeight.small};
     font-size: ${({ theme }) => theme.fontSizes.paragraph.medium.mobile};
   }
   `;
@@ -142,29 +142,19 @@ export const Button = styled(ButtonLink).attrs({ as: 'button' })`
 export const SeeMoreButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-90px auto 120px')};
+  margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-100px auto 240px')};
   position: relative;
   z-index: 1;
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-170px auto 205px')};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-60px auto 84px')};
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '175px auto 210px')};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-30px auto 48px')};
-  }
-`;
-
-export const SeeLessButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: -90px auto 120px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    margin: -60px auto 84px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    margin: -30px auto 48px;
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '0 auto 100px')};
   }
 `;
