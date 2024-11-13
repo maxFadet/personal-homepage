@@ -142,19 +142,19 @@ export const Button = styled(ButtonLink).attrs({ as: 'button' })`
 export const SeeMoreButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-100px auto 240px')};
+  margin: ${({ isExpanded }) => (isExpanded ? '20px auto 90px' : '-100px auto 240px')};
   position: relative;
   z-index: 1;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '-170px auto 205px')};
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 70px' : '-170px auto 205px')};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '175px auto 210px')};
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 50px' : '175px auto 210px')};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}) {
-    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 0' : '0 auto 100px')};
+    margin: ${({ isExpanded }) => (isExpanded ? '20px auto 30px' : '0 auto 100px')};
   }
 `;
