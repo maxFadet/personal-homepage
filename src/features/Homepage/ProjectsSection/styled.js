@@ -24,7 +24,6 @@ export const ProjectGrid = styled.ul`
   }
 `;
 
-
 export const ProjectTile = styled.li`
   background-color: ${({ theme }) => theme.colors.tile.background};
   box-shadow: 
