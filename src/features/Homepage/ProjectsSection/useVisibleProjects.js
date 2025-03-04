@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 const useVisibleProjects = (projects, initialVisibleCount = 4) => {
     const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
     const [isExpanded, setIsExpanded] = useState(false);
-
     const filteredProjects = projects.filter(project => project.description);
 
     useEffect(() => {
