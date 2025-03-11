@@ -57,6 +57,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - BEM convention
   - markdown
   - Redux Toolkit
+  
 &nbsp;
 
 ## Available Scripts
