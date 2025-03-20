@@ -43,6 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   <img src="https://github.com/devicons/devicon/blob/master/icons/axios/axios-plain-wordmark.svg" title="Axios" **alt="Axios" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
+
 &nbsp;
   - useState
   - useEffect
@@ -93,6 +94,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 &nbsp;
+
 ## Author
 
 This project is developed by maxFadet 
