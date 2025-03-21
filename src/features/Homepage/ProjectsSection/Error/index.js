@@ -6,7 +6,7 @@ export const Error = () => (
         <ErrorIcon />
         <ErrorTitle>Oops! Something went wrong...</ErrorTitle>
         <ErrorParagraph>
-            Sorry, failed to load Github projects. <br />
+            Sorry, failed to load Github projects.<br />
             You can check them directly on Github.
         </ErrorParagraph>
         <ButtonLink
