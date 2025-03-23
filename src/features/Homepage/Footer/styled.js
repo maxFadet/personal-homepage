@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const FooterWrapper = styled.footer`
   max-width: 691px;
   position: relative;
