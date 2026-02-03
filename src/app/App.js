@@ -7,7 +7,7 @@ import { Normalize } from "styled-normalize";
 
 function App() {
     const darkMode = useSelector((state) => state.theme.darkMode);
-
+ 
     return (
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
             <Normalize />
